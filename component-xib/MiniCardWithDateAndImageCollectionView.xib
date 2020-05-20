@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kXC-N0-qzo" customClass="MiniCardWithDateAndImageCollectionView" customModule="FCMB_Mobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="719" height="243"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="719" height="243"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Go8-zI-pvj" customClass="MiniCardWithDateAndImage" customModule="FCMB_Mobile" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="719" height="243"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Go8-zI-pvj" firstAttribute="top" secondItem="iRI-Yh-3Ga" secondAttribute="top" id="N46-nT-a6E"/>
+                <constraint firstItem="Go8-zI-pvj" firstAttribute="leading" secondItem="iRI-Yh-3Ga" secondAttribute="leading" id="euG-MA-6SW"/>
+                <constraint firstItem="iRI-Yh-3Ga" firstAttribute="trailing" secondItem="Go8-zI-pvj" secondAttribute="trailing" id="fzX-xw-ZLW"/>
+                <constraint firstItem="iRI-Yh-3Ga" firstAttribute="bottom" secondItem="Go8-zI-pvj" secondAttribute="bottom" id="uuB-nD-2V4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="iRI-Yh-3Ga"/>
+            <size key="customSize" width="719" height="243"/>
+            <connections>
+                <outlet property="card" destination="Go8-zI-pvj" id="oVK-ZL-bov"/>
+            </connections>
+            <point key="canvasLocation" x="60.5" y="116.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

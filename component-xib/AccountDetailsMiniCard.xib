@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountDetailsMiniCard">
+            <connections>
+                <outlet property="accountName" destination="leW-nV-uOI" id="xxK-eF-98u"/>
+                <outlet property="accountNumber" destination="rec-MT-XhD" id="MYO-eA-F8p"/>
+                <outlet property="accountNumberTop" destination="P7d-jp-Zh4" id="yqs-qS-wRe"/>
+                <outlet property="closeButton" destination="qWC-Rq-gaO" id="q4R-XS-G3m"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="uns-Cw-PVd"/>
+                <outlet property="saveBeneficaryWrapper" destination="AQM-en-GSy" id="yop-J6-IKW"/>
+                <outlet property="saveBeneficiaryInput" destination="rUo-me-xVj" id="yZf-Lu-Za4"/>
+                <outlet property="sendNotificationInput" destination="4zr-FT-ALd" id="JN7-AE-hmh"/>
+                <outlet property="sendNotificationWrapper" destination="HPF-l0-9Eh" id="976-ur-iPO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardView" customModule="FCMB_Mobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="504" height="236"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leW-nV-uOI">
+                    <rect key="frame" x="15" y="30" width="464" height="21"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0011357716 | FCMB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rec-MT-XhD">
+                    <rect key="frame" x="15" y="67" width="489" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPF-l0-9Eh">
+                    <rect key="frame" x="0.0" y="98" width="504" height="49"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NMv-Bm-62E">
+                            <rect key="frame" x="0.0" y="0.0" width="504" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Etq-38-5dE"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zr-FT-ALd" customClass="RadioButtonsInputGroup" customModule="FCMB_Mobile" customModuleProvider="target">
+                            <rect key="frame" x="15" y="9" width="474" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="eXc-JS-6En"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fieldName" value="__sendNotification"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="NMv-Bm-62E" firstAttribute="top" secondItem="HPF-l0-9Eh" secondAttribute="top" id="7ds-Ve-E1L"/>
+                        <constraint firstItem="4zr-FT-ALd" firstAttribute="top" secondItem="NMv-Bm-62E" secondAttribute="bottom" constant="8" id="UQ6-os-9xj"/>
+                        <constraint firstAttribute="bottom" secondItem="4zr-FT-ALd" secondAttribute="bottom" id="XnV-pz-Lx6"/>
+                        <constraint firstItem="NMv-Bm-62E" firstAttribute="leading" secondItem="HPF-l0-9Eh" secondAttribute="leading" id="Y1f-UJ-P0z"/>
+                        <constraint firstAttribute="trailing" secondItem="4zr-FT-ALd" secondAttribute="trailing" constant="15" id="etr-pf-t7T"/>
+                        <constraint firstItem="4zr-FT-ALd" firstAttribute="leading" secondItem="HPF-l0-9Eh" secondAttribute="leading" constant="15" id="iIH-6I-ppE"/>
+                        <constraint firstAttribute="trailing" secondItem="NMv-Bm-62E" secondAttribute="trailing" id="tUC-Ab-jzj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQM-en-GSy">
+                    <rect key="frame" x="0.0" y="157" width="504" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdh-Mi-8xB">
+                            <rect key="frame" x="0.0" y="0.0" width="504" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="8zT-Td-kIf"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUo-me-xVj" customClass="RadioButtonsInputGroup" customModule="FCMB_Mobile" customModuleProvider="target">
+                            <rect key="frame" x="15" y="5" width="474" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="MlI-Cj-3og"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fieldName" value="__saveBeneficiary"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="rUo-me-xVj" secondAttribute="bottom" constant="5" id="AlB-lt-5Po"/>
+                        <constraint firstItem="rUo-me-xVj" firstAttribute="leading" secondItem="AQM-en-GSy" secondAttribute="leading" constant="15" id="BVr-02-yMW"/>
+                        <constraint firstItem="qdh-Mi-8xB" firstAttribute="top" secondItem="AQM-en-GSy" secondAttribute="top" id="D06-bV-ODo"/>
+                        <constraint firstItem="qdh-Mi-8xB" firstAttribute="leading" secondItem="AQM-en-GSy" secondAttribute="leading" id="DHu-8H-4zY"/>
+                        <constraint firstItem="qdh-Mi-8xB" firstAttribute="width" secondItem="AQM-en-GSy" secondAttribute="width" id="IHG-iK-mpM"/>
+                        <constraint firstItem="rUo-me-xVj" firstAttribute="top" secondItem="qdh-Mi-8xB" secondAttribute="bottom" constant="4" id="rfl-c6-izN"/>
+                        <constraint firstAttribute="trailing" secondItem="rUo-me-xVj" secondAttribute="trailing" constant="15" id="tdG-F8-Mhz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWC-Rq-gaO" customClass="RoundedIconButton" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="464" y="15" width="25" height="25"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="mVC-ln-2IG"/>
+                        <constraint firstAttribute="width" constant="25" id="o5I-kz-8oT"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="iconText" value="close"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rec-MT-XhD" secondAttribute="trailing" id="2ba-Zb-DZT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="leW-nV-uOI" secondAttribute="trailing" constant="25" id="Dci-Mx-Chz"/>
+                <constraint firstItem="leW-nV-uOI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="Mfu-aG-jUd"/>
+                <constraint firstItem="rec-MT-XhD" firstAttribute="top" secondItem="leW-nV-uOI" secondAttribute="bottom" constant="16" id="P7d-jp-Zh4"/>
+                <constraint firstItem="rec-MT-XhD" firstAttribute="leading" secondItem="leW-nV-uOI" secondAttribute="leading" id="Qsv-eD-Dpv"/>
+                <constraint firstItem="AQM-en-GSy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="TY8-ia-nu5"/>
+                <constraint firstItem="qWC-Rq-gaO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="UP9-5N-cnR"/>
+                <constraint firstItem="leW-nV-uOI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="atD-ow-98s"/>
+                <constraint firstItem="HPF-l0-9Eh" firstAttribute="leading" secondItem="AQM-en-GSy" secondAttribute="leading" id="d6h-zl-Xcv"/>
+                <constraint firstItem="AQM-en-GSy" firstAttribute="top" secondItem="HPF-l0-9Eh" secondAttribute="bottom" constant="10" id="qtU-16-o3y"/>
+                <constraint firstItem="HPF-l0-9Eh" firstAttribute="top" secondItem="rec-MT-XhD" secondAttribute="bottom" constant="10" id="sUc-H8-7Rv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AQM-en-GSy" secondAttribute="trailing" id="tuK-fv-tCW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qWC-Rq-gaO" secondAttribute="trailing" constant="15" id="xlF-YA-Eyd"/>
+                <constraint firstItem="HPF-l0-9Eh" firstAttribute="trailing" secondItem="AQM-en-GSy" secondAttribute="trailing" id="zzA-PD-H53"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="118" y="-161"/>
+        </view>
+    </objects>
+</document>

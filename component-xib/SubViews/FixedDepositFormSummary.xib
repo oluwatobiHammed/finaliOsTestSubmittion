@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FixedDepositFormSummary" customModule="FCMB_Mobile" customModuleProvider="target">
+            <connections>
+                <outlet property="baseAmountLabel" destination="iMK-hb-Nf9" id="uiX-yh-aQ7"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="VVW-gP-73O"/>
+                <outlet property="dateLabel" destination="mX9-0S-gdP" id="h3W-ID-2x7"/>
+                <outlet property="interestLabel" destination="03f-z1-V9h" id="3ta-0N-j3y"/>
+                <outlet property="rateLabel" destination="Du0-7f-vnd" id="TvB-nS-x7H"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="718" height="175"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Base Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIx-JJ-San" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="20" y="20" width="318" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#4F4F4F"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="-1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N 180,000.00 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMK-hb-Nf9" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="20" y="46" width="318" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#4F4F4F"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5A-z0-jjF" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="352.5" y="46" width="11" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="Bold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#4F4F4F"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view hidden="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYp-dJ-JPq" userLabel="divider">
+                    <rect key="frame" x="358" y="0.0" width="1" height="175"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="XjB-iT-VUK"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCd-Cb-7kF" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="379" y="20" width="319" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#4F4F4F"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="-1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N 10,000.00 " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03f-z1-V9h" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="379" y="46" width="319" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#4F4F4F"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1Z-Su-00H">
+                    <rect key="frame" x="20" y="87" width="678" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="KXI-e3-ZPT"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zC-BM-jyh" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="20" y="108" width="318" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#4F4F4F"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="-1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Du0-7f-vnd" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="20" y="134" width="318" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#4F4F4F"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maturity Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ER-N8-Flw" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="379" y="108" width="319" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#4F4F4F"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="-1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12th Dec, 2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mX9-0S-gdP" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="379" y="134" width="319" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#4F4F4F"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3ER-N8-Flw" firstAttribute="top" secondItem="6zC-BM-jyh" secondAttribute="top" id="2ER-jY-lcK"/>
+                <constraint firstItem="MIx-JJ-San" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="3gW-R8-s3g"/>
+                <constraint firstItem="iMK-hb-Nf9" firstAttribute="top" secondItem="MIx-JJ-San" secondAttribute="bottom" constant="5" id="3y5-1W-0Bj"/>
+                <constraint firstItem="H1Z-Su-00H" firstAttribute="top" secondItem="iMK-hb-Nf9" secondAttribute="bottom" constant="20" id="6jv-t7-547"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NCd-Cb-7kF" secondAttribute="trailing" constant="20" id="BKe-0j-gxp"/>
+                <constraint firstItem="dYp-dJ-JPq" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Bz5-I5-eNt"/>
+                <constraint firstItem="dYp-dJ-JPq" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="EIJ-56-69b"/>
+                <constraint firstItem="iMK-hb-Nf9" firstAttribute="leading" secondItem="MIx-JJ-San" secondAttribute="leading" id="FbF-D6-d2z"/>
+                <constraint firstItem="3ER-N8-Flw" firstAttribute="leading" secondItem="NCd-Cb-7kF" secondAttribute="leading" id="HFd-D9-dsG"/>
+                <constraint firstItem="mX9-0S-gdP" firstAttribute="trailing" secondItem="3ER-N8-Flw" secondAttribute="trailing" id="Ikg-9o-Jhw"/>
+                <constraint firstItem="NCd-Cb-7kF" firstAttribute="leading" secondItem="dYp-dJ-JPq" secondAttribute="trailing" constant="20" id="LCT-QD-mcL"/>
+                <constraint firstItem="dYp-dJ-JPq" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="LZ1-tL-bh4"/>
+                <constraint firstItem="iMK-hb-Nf9" firstAttribute="trailing" secondItem="MIx-JJ-San" secondAttribute="trailing" id="LxI-r8-1le"/>
+                <constraint firstItem="H1Z-Su-00H" firstAttribute="trailing" secondItem="NCd-Cb-7kF" secondAttribute="trailing" id="NUe-ac-Mzi"/>
+                <constraint firstItem="H1Z-Su-00H" firstAttribute="leading" secondItem="MIx-JJ-San" secondAttribute="leading" id="REw-LI-F7o"/>
+                <constraint firstItem="03f-z1-V9h" firstAttribute="top" secondItem="iMK-hb-Nf9" secondAttribute="top" id="RyV-4Z-Yaj"/>
+                <constraint firstItem="dYp-dJ-JPq" firstAttribute="leading" secondItem="MIx-JJ-San" secondAttribute="trailing" constant="20" id="WpN-3M-XFV"/>
+                <constraint firstItem="mX9-0S-gdP" firstAttribute="leading" secondItem="3ER-N8-Flw" secondAttribute="leading" id="XDw-zz-up7"/>
+                <constraint firstItem="MIx-JJ-San" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="YYo-R4-LxD"/>
+                <constraint firstItem="03f-z1-V9h" firstAttribute="trailing" secondItem="NCd-Cb-7kF" secondAttribute="trailing" id="aYV-ul-Nf2"/>
+                <constraint firstItem="mX9-0S-gdP" firstAttribute="top" secondItem="Du0-7f-vnd" secondAttribute="top" id="b3x-yX-w8w"/>
+                <constraint firstItem="6zC-BM-jyh" firstAttribute="top" secondItem="H1Z-Su-00H" secondAttribute="bottom" constant="20" id="cfA-OY-8Gc"/>
+                <constraint firstItem="03f-z1-V9h" firstAttribute="leading" secondItem="NCd-Cb-7kF" secondAttribute="leading" id="djS-BS-wzG"/>
+                <constraint firstItem="t5A-z0-jjF" firstAttribute="centerY" secondItem="iMK-hb-Nf9" secondAttribute="centerY" id="fBK-ys-jND"/>
+                <constraint firstItem="6zC-BM-jyh" firstAttribute="trailing" secondItem="MIx-JJ-San" secondAttribute="trailing" id="fsa-4H-UoK"/>
+                <constraint firstItem="Du0-7f-vnd" firstAttribute="leading" secondItem="6zC-BM-jyh" secondAttribute="leading" id="jmm-po-eOu"/>
+                <constraint firstItem="6zC-BM-jyh" firstAttribute="leading" secondItem="H1Z-Su-00H" secondAttribute="leading" id="jnP-ix-eYd"/>
+                <constraint firstItem="t5A-z0-jjF" firstAttribute="centerX" secondItem="dYp-dJ-JPq" secondAttribute="centerX" id="lH6-sN-gww"/>
+                <constraint firstItem="Du0-7f-vnd" firstAttribute="top" secondItem="6zC-BM-jyh" secondAttribute="bottom" constant="5" id="mjd-go-rtU"/>
+                <constraint firstItem="NCd-Cb-7kF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="njF-LQ-D1X"/>
+                <constraint firstItem="3ER-N8-Flw" firstAttribute="trailing" secondItem="NCd-Cb-7kF" secondAttribute="trailing" id="uDc-8f-KIb"/>
+                <constraint firstItem="Du0-7f-vnd" firstAttribute="trailing" secondItem="6zC-BM-jyh" secondAttribute="trailing" id="zEg-gC-I88"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="9" y="-215.5"/>
+        </view>
+    </objects>
+</document>

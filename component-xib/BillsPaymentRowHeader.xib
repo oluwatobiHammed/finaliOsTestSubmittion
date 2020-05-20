@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BillsPaymentRowHeader" customModule="FCMB_Mobile" customModuleProvider="target">
+            <connections>
+                <outlet property="backToCategoriesButton" destination="ql5-vr-x1U" id="16r-nt-g8j"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Hxp-I2-m3a"/>
+                <outlet property="currentCategoryLabel" destination="e6d-H0-hxb" id="rfI-a4-nxR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ql5-vr-x1U">
+                    <rect key="frame" x="0.0" y="5" width="75" height="30"/>
+                    <state key="normal" title="Categories"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caret_left" translatesAutoresizingMaskIntoConstraints="NO" id="rZt-do-6cQ">
+                    <rect key="frame" x="83" y="13" width="8" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="8" id="fNN-a0-8fq"/>
+                        <constraint firstAttribute="height" constant="14" id="pMf-w6-5X9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6d-H0-hxb">
+                    <rect key="frame" x="99" y="10" width="93.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="e6d-H0-hxb" firstAttribute="leading" secondItem="rZt-do-6cQ" secondAttribute="trailing" constant="8" id="AQ7-PN-8SX"/>
+                <constraint firstItem="ql5-vr-x1U" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="DcJ-C0-ape"/>
+                <constraint firstItem="ql5-vr-x1U" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Hmh-UP-e08"/>
+                <constraint firstItem="rZt-do-6cQ" firstAttribute="leading" secondItem="ql5-vr-x1U" secondAttribute="trailing" constant="8" id="TaX-Xe-Do1"/>
+                <constraint firstItem="rZt-do-6cQ" firstAttribute="centerY" secondItem="ql5-vr-x1U" secondAttribute="centerY" id="tUs-26-Gt1"/>
+                <constraint firstItem="e6d-H0-hxb" firstAttribute="centerY" secondItem="rZt-do-6cQ" secondAttribute="centerY" id="uow-0y-f28"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="63.5" y="-250"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="caret_left" width="8" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupTableItemsListDisplaySelector" customModule="FCMB_Mobile" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="kQt-pm-O0y"/>
+                <outlet property="tableView" destination="T2k-Tp-Xq5" id="4vT-xz-8nu"/>
+                <outlet property="titleLabel" destination="4KI-Zf-hrC" id="Ohc-9A-itm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="281"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KI-Zf-hrC" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="15" y="9.9999999999999982" width="384" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="Bold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T2k-Tp-Xq5">
+                    <rect key="frame" x="0.0" y="45.333333333333329" width="414" height="235.66666666666669"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="235.66666666666669" id="skX-vp-Zye"/>
+                    </constraints>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeH-qf-XLG">
+                    <rect key="frame" x="384" y="5" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="py0-ji-ueS"/>
+                        <constraint firstAttribute="width" constant="25" id="zrt-Aq-n1a"/>
+                    </constraints>
+                    <state key="normal" title="C" image="Cancel"/>
+                    <connections>
+                        <action selector="close" destination="-1" eventType="touchUpInside" id="dIc-i3-pMN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="T2k-Tp-Xq5" firstAttribute="top" secondItem="4KI-Zf-hrC" secondAttribute="bottom" constant="15" id="7MB-k6-Sh8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4KI-Zf-hrC" secondAttribute="trailing" constant="15" id="7Yz-OE-BAb"/>
+                <constraint firstItem="T2k-Tp-Xq5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="G37-uL-Uxp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="T2k-Tp-Xq5" secondAttribute="bottom" id="J4g-MH-fcK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="T2k-Tp-Xq5" secondAttribute="trailing" id="PCf-3N-HSb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FeH-qf-XLG" secondAttribute="trailing" constant="5" id="bKP-Ol-ADn"/>
+                <constraint firstItem="4KI-Zf-hrC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="kY0-H8-g4b"/>
+                <constraint firstItem="FeH-qf-XLG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="vlK-cZ-I3Q"/>
+                <constraint firstItem="4KI-Zf-hrC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="xUU-Pe-XSu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="81.114130434782609"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Cancel" width="100" height="100"/>
+    </resources>
+</document>

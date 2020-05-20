@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DaysCounter" customModule="FCMB_Mobile" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="JwK-4r-p0p"/>
+                <outlet property="descriptionLabel" destination="xcb-ZU-B1V" id="IJd-WQ-84I"/>
+                <outlet property="iconLabel" destination="Czj-WX-RCu" id="GMm-NK-Iyd"/>
+                <outlet property="valueLabel" destination="R1G-8F-3KZ" id="aje-zK-FPo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="571" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czj-WX-RCu">
+                    <rect key="frame" x="259" y="19.5" width="11" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1G-8F-3KZ" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="280" y="19.5" width="11" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#5F138D"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcb-ZU-B1V" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="296" y="19.5" width="38" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#4F4F4F"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="R1G-8F-3KZ" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="5h3-rd-Mlb"/>
+                <constraint firstItem="R1G-8F-3KZ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="O6q-9q-Waz"/>
+                <constraint firstItem="R1G-8F-3KZ" firstAttribute="bottom" secondItem="Czj-WX-RCu" secondAttribute="bottom" id="VIU-Hh-QUA"/>
+                <constraint firstItem="R1G-8F-3KZ" firstAttribute="bottom" secondItem="xcb-ZU-B1V" secondAttribute="bottom" id="YbU-vF-ksK"/>
+                <constraint firstItem="R1G-8F-3KZ" firstAttribute="leading" secondItem="Czj-WX-RCu" secondAttribute="trailing" constant="10" id="hBj-Ae-nSW"/>
+                <constraint firstItem="xcb-ZU-B1V" firstAttribute="leading" secondItem="R1G-8F-3KZ" secondAttribute="trailing" constant="5" id="l9z-ni-fqG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="131.5" y="-245"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BranchInputGroupSelector" customModule="FCMB_Mobile" customModuleProvider="target">
+            <connections>
+                <outlet property="branchHolder" destination="Es9-aE-Jxe" id="sET-OO-CVv"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="gdg-Y0-9Fd"/>
+                <outlet property="locationButton" destination="DeA-bP-WKZ" id="RUc-Ik-EzQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="714" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Es9-aE-Jxe" customClass="InputFieldGroup" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="654" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Select Branch"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="FOQ-5S-INT" appends="YES" id="e6m-IR-74j"/>
+                    </connections>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeA-bP-WKZ" customClass="IconButton" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="654" y="0.0" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="79s-ep-4Dg"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="drawOval" value="NO"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="icon" value="location"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onLocationButtonClicked" destination="-1" eventType="touchUpInside" id="LtR-F0-XKx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="DeA-bP-WKZ" secondAttribute="bottom" id="7zf-1x-b95"/>
+                <constraint firstItem="Es9-aE-Jxe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="DBS-Gg-JrD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Es9-aE-Jxe" secondAttribute="bottom" id="TCd-nL-CTe"/>
+                <constraint firstItem="Es9-aE-Jxe" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="beJ-gd-WuU"/>
+                <constraint firstItem="DeA-bP-WKZ" firstAttribute="leading" secondItem="Es9-aE-Jxe" secondAttribute="trailing" id="iPE-Tk-LlV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DeA-bP-WKZ" secondAttribute="trailing" id="k32-Mk-oau"/>
+                <constraint firstItem="DeA-bP-WKZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="x8p-GB-zCW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="241" y="-212.5"/>
+        </view>
+        <tapGestureRecognizer id="FOQ-5S-INT">
+            <connections>
+                <action selector="onLocationButtonClicked" destination="-1" id="UkX-5g-cTV"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AmountDisplayView" customModule="FCMB_Mobile" customModuleProvider="target">
+            <connections>
+                <outlet property="amountLabel" destination="dvk-ny-cRz" id="l2N-iL-NkQ"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="DYV-GQ-LrE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="623" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEU-AR-aKs" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="260.5" y="20" width="102" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NGN 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvk-ny-cRz" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="10" y="56" width="603" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="Bold"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dvk-ny-cRz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="3TW-zQ-3LJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dvk-ny-cRz" secondAttribute="bottom" constant="23" id="Fws-Xv-qku"/>
+                <constraint firstItem="QEU-AR-aKs" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="IKe-gz-hv0"/>
+                <constraint firstItem="dvk-ny-cRz" firstAttribute="top" secondItem="QEU-AR-aKs" secondAttribute="bottom" constant="15" id="Iga-oI-iqe"/>
+                <constraint firstItem="QEU-AR-aKs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="Kec-mD-UHf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dvk-ny-cRz" secondAttribute="trailing" constant="10" id="N97-n8-ZoX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Fws-Xv-qku"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="157.5" y="-223.5"/>
+        </view>
+    </objects>
+</document>

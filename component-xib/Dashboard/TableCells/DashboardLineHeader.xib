@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DashboardLineHeader" customModule="FCMB_Mobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="551" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target Savings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fn-Ag-w9z" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="10" y="24.5" width="441" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="Bold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brE-0E-cQg">
+                    <rect key="frame" x="485" y="21" width="56" height="28"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
+                    <state key="normal" title="View All">
+                        <color key="titleColor" red="0.37254901960784315" green="0.074509803921568626" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onButtonClicked" destination="iN0-l3-epB" eventType="touchUpInside" id="Mve-zf-brb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3Fn-Ag-w9z" secondAttribute="trailing" constant="100" id="B6h-6h-a9Z"/>
+                <constraint firstItem="3Fn-Ag-w9z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Bsw-8j-wpf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="brE-0E-cQg" secondAttribute="trailing" constant="10" id="EdP-zD-HNI"/>
+                <constraint firstItem="brE-0E-cQg" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Ml0-Fn-RWk"/>
+                <constraint firstItem="3Fn-Ag-w9z" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="NQG-gM-t70"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="button" destination="brE-0E-cQg" id="1Oj-o4-AWT"/>
+                <outlet property="title" destination="3Fn-Ag-w9z" id="Qkf-fy-eVw"/>
+            </connections>
+            <point key="canvasLocation" x="124.5" y="-247.5"/>
+        </view>
+    </objects>
+</document>

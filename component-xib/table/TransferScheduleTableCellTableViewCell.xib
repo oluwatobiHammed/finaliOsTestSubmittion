@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="161" id="KGk-i7-Jjw" customClass="TransferScheduleTableCellTableViewCell" customModule="FCMB_Mobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="154"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="153.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6i-Nt-dni">
+                        <rect key="frame" x="25" y="2" width="369" height="136.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N 25,000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYO-q6-uIK">
+                                <rect key="frame" x="20" y="13" width="111" height="22"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From your Savings Account (001235003)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voU-J7-ARv">
+                                <rect key="frame" x="20" y="40" width="329" height="15"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to John Obezee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGX-3N-Px7">
+                                <rect key="frame" x="20" y="60" width="97" height="15"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYX-rh-IiJ">
+                                <rect key="frame" x="20" y="90" width="121" height="37"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDf-zb-0u6">
+                                        <rect key="frame" x="15" y="7.5" width="9.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InR-Qh-r7b" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                                        <rect key="frame" x="34.5" y="8" width="71.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="InR-Qh-r7b" firstAttribute="top" secondItem="GYX-rh-IiJ" secondAttribute="top" constant="8" id="40r-r4-mh1"/>
+                                    <constraint firstItem="ZDf-zb-0u6" firstAttribute="leading" secondItem="GYX-rh-IiJ" secondAttribute="leading" constant="15" id="NCC-vo-ENt"/>
+                                    <constraint firstItem="InR-Qh-r7b" firstAttribute="leading" secondItem="ZDf-zb-0u6" secondAttribute="trailing" constant="10" id="Sqd-Ne-ko8"/>
+                                    <constraint firstItem="ZDf-zb-0u6" firstAttribute="centerY" secondItem="GYX-rh-IiJ" secondAttribute="centerY" id="Z2c-9a-bmT"/>
+                                    <constraint firstAttribute="bottom" secondItem="InR-Qh-r7b" secondAttribute="bottom" constant="8" id="jet-bb-fEG"/>
+                                    <constraint firstAttribute="trailing" secondItem="InR-Qh-r7b" secondAttribute="trailing" constant="15" id="t1p-3M-t4c"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osR-rc-dxc" customClass="IconButton" customModule="FCMB_Mobile" customModuleProvider="target">
+                                <rect key="frame" x="341" y="8" width="20" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="X0o-JS-ueh"/>
+                                    <constraint firstAttribute="width" constant="20" id="gxT-rN-MEC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="icon" value="vertical_bars"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="colorIcon">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="drawOval" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="contentMenuButtonDidClick" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PFb-3P-zD1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in 2 days" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17C-nm-7JY" customClass="IconTextLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                                <rect key="frame" x="252" y="101" width="54" height="15"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontIcon" value="access_time"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="in 2 days"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalSpacing">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="verticalSpacing">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3d-ur-lxX" customClass="IconTextLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                                <rect key="frame" x="312" y="103" width="46.5" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46.5" id="JAa-Ud-Rcp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontIcon" value="sync"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Weekly"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="horizontalSpacing">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="verticalSpacing">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JAa-Ud-Rcp"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="voU-J7-ARv" secondAttribute="trailing" constant="20" id="0ex-SY-tHP"/>
+                            <constraint firstAttribute="trailing" secondItem="osR-rc-dxc" secondAttribute="trailing" constant="8" id="79X-x7-nJk"/>
+                            <constraint firstAttribute="trailing" secondItem="q3d-ur-lxX" secondAttribute="trailing" constant="10" id="B1V-Ic-JDV"/>
+                            <constraint firstItem="voU-J7-ARv" firstAttribute="leading" secondItem="lYO-q6-uIK" secondAttribute="leading" id="C9z-ta-Ldx"/>
+                            <constraint firstItem="q3d-ur-lxX" firstAttribute="leading" secondItem="17C-nm-7JY" secondAttribute="trailing" constant="6" id="H3S-de-Dpr"/>
+                            <constraint firstItem="lYO-q6-uIK" firstAttribute="top" secondItem="k6i-Nt-dni" secondAttribute="top" constant="13" id="Iyu-E6-XQW"/>
+                            <constraint firstItem="osR-rc-dxc" firstAttribute="top" secondItem="k6i-Nt-dni" secondAttribute="top" constant="8" id="JMj-m0-def"/>
+                            <constraint firstItem="q3d-ur-lxX" firstAttribute="centerY" secondItem="17C-nm-7JY" secondAttribute="centerY" multiplier="1.02" id="Mg2-V0-6sh"/>
+                            <constraint firstItem="17C-nm-7JY" firstAttribute="centerY" secondItem="GYX-rh-IiJ" secondAttribute="centerY" id="PrX-q9-nCd"/>
+                            <constraint firstItem="eGX-3N-Px7" firstAttribute="top" secondItem="voU-J7-ARv" secondAttribute="bottom" constant="5" id="Rci-jQ-aJp"/>
+                            <constraint firstItem="GYX-rh-IiJ" firstAttribute="top" secondItem="eGX-3N-Px7" secondAttribute="bottom" constant="15" id="Uu7-0O-tm7"/>
+                            <constraint firstItem="lYO-q6-uIK" firstAttribute="leading" secondItem="k6i-Nt-dni" secondAttribute="leading" constant="20" id="Vbv-t2-Qq2"/>
+                            <constraint firstItem="voU-J7-ARv" firstAttribute="top" secondItem="lYO-q6-uIK" secondAttribute="bottom" constant="5" id="ZTW-wn-nMF"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GYX-rh-IiJ" secondAttribute="bottom" constant="5" id="cgr-ok-h0M"/>
+                            <constraint firstItem="eGX-3N-Px7" firstAttribute="leading" secondItem="voU-J7-ARv" secondAttribute="leading" id="mMJ-6Z-M2o"/>
+                            <constraint firstItem="GYX-rh-IiJ" firstAttribute="leading" secondItem="eGX-3N-Px7" secondAttribute="leading" id="tuI-Js-iGG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="k6i-Nt-dni" secondAttribute="bottom" constant="15" id="GYo-jj-mLW"/>
+                    <constraint firstItem="k6i-Nt-dni" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="Lm9-MN-Yxa"/>
+                    <constraint firstItem="k6i-Nt-dni" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="mw0-S9-PZx"/>
+                    <constraint firstAttribute="trailing" secondItem="k6i-Nt-dni" secondAttribute="trailing" constant="25" id="qQ9-Mh-mwa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="balanceLabel" destination="lYO-q6-uIK" id="cah-da-7J0"/>
+                <outlet property="containerView" destination="k6i-Nt-dni" id="u7W-Ib-27L"/>
+                <outlet property="contentMenuWith" destination="gxT-rN-MEC" id="rw3-wT-HDe"/>
+                <outlet property="contextMenuButton" destination="osR-rc-dxc" id="GCo-YP-HBD"/>
+                <outlet property="description2Label" destination="eGX-3N-Px7" id="PJ1-vr-lGh"/>
+                <outlet property="descriptionLabel" destination="voU-J7-ARv" id="MNU-nC-9Va"/>
+                <outlet property="inDaysLabel" destination="17C-nm-7JY" id="b3X-A8-FyK"/>
+                <outlet property="recurringLabel" destination="q3d-ur-lxX" id="R7k-YD-hLx"/>
+                <outlet property="recurringLabelWidth" destination="JAa-Ud-Rcp" id="Ozp-GP-glH"/>
+                <outlet property="recurringTrailingLayout" destination="B1V-Ic-JDV" id="dAI-1n-c7o"/>
+                <outlet property="scheduleContainer" destination="GYX-rh-IiJ" id="D5x-Ax-Mr3"/>
+                <outlet property="scheduleIcon" destination="ZDf-zb-0u6" id="2GX-Xl-i03"/>
+                <outlet property="scheduledLabel" destination="InR-Qh-r7b" id="DfY-wV-s1s"/>
+            </connections>
+            <point key="canvasLocation" x="112.5" y="112"/>
+        </tableViewCell>
+    </objects>
+</document>

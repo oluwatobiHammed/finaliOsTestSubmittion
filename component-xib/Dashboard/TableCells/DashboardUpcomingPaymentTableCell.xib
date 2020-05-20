@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="124" id="jlf-IR-yKK" customClass="DashboardUpcomingPaymentTableCell" customModule="FCMB_Mobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jlf-IR-yKK" id="VXm-1O-P2q">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="123.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9d6-4R-vf9" customClass="HorizontalScroller" customModule="FCMB_Mobile" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="9d6-4R-vf9" firstAttribute="leading" secondItem="jlf-IR-yKK" secondAttribute="leading" id="DAz-xW-3V0"/>
+                <constraint firstAttribute="bottom" secondItem="9d6-4R-vf9" secondAttribute="bottom" id="Q43-Hl-iS6"/>
+                <constraint firstItem="9d6-4R-vf9" firstAttribute="top" secondItem="jlf-IR-yKK" secondAttribute="top" id="tDh-Cl-gKY"/>
+                <constraint firstAttribute="trailing" secondItem="9d6-4R-vf9" secondAttribute="trailing" id="zUX-dP-PBp"/>
+            </constraints>
+            <connections>
+                <outlet property="horizontalScroller" destination="9d6-4R-vf9" id="DUE-mZ-NFC"/>
+            </connections>
+            <point key="canvasLocation" x="129.5" y="-14"/>
+        </tableViewCell>
+    </objects>
+</document>

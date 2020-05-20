@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FixedDepositSummary" customModule="FCMB_Mobile" customModuleProvider="target">
+            <connections>
+                <outlet property="amountLabel" destination="Dsp-vE-HHE" id="wZF-Wn-Y6K"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="spH-9e-T08"/>
+                <outlet property="interestLable" destination="U2J-xY-WDO" id="Qzy-24-Y9u"/>
+                <outlet property="progressTracker" destination="4XF-C3-RHY" id="qhT-fL-mRM"/>
+                <outlet property="rateLabel" destination="6dH-Gr-LuM" id="jA5-R5-XZK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="708" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N 2,000,000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsp-vE-HHE" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="20" y="15" width="668" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="Bold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fixed Deposit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fr8-NJ-uFt" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="20" y="44" width="668" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="-0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeColor" value="#BDBDBD"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest Rate: 15%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dH-Gr-LuM" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="20" y="80" width="668" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accrued Interest: N200,00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2J-xY-WDO" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="20" y="103.5" width="668" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4XF-C3-RHY" customClass="CustomSlider" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="18" y="124.5" width="672" height="36.5"/>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6dH-Gr-LuM" firstAttribute="top" secondItem="Fr8-NJ-uFt" secondAttribute="bottom" constant="15" id="2x9-PI-DTm"/>
+                <constraint firstItem="4XF-C3-RHY" firstAttribute="top" secondItem="U2J-xY-WDO" secondAttribute="bottom" id="34l-s9-855"/>
+                <constraint firstItem="6dH-Gr-LuM" firstAttribute="trailing" secondItem="Fr8-NJ-uFt" secondAttribute="trailing" id="DgN-Q6-DSP"/>
+                <constraint firstItem="Fr8-NJ-uFt" firstAttribute="leading" secondItem="Dsp-vE-HHE" secondAttribute="leading" id="FsP-L6-x2o"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4XF-C3-RHY" secondAttribute="trailing" constant="20" id="LuC-YJ-GB6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Dsp-vE-HHE" secondAttribute="trailing" constant="20" id="SWo-6c-LMh"/>
+                <constraint firstItem="U2J-xY-WDO" firstAttribute="top" secondItem="6dH-Gr-LuM" secondAttribute="bottom" constant="3" id="XAu-1b-fqB"/>
+                <constraint firstItem="Dsp-vE-HHE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="YfE-Zm-Eel"/>
+                <constraint firstItem="U2J-xY-WDO" firstAttribute="leading" secondItem="6dH-Gr-LuM" secondAttribute="leading" id="Ylp-kc-LZM"/>
+                <constraint firstItem="U2J-xY-WDO" firstAttribute="trailing" secondItem="6dH-Gr-LuM" secondAttribute="trailing" id="Zec-qY-Qck"/>
+                <constraint firstItem="Fr8-NJ-uFt" firstAttribute="trailing" secondItem="Dsp-vE-HHE" secondAttribute="trailing" id="eVB-Dq-kbg"/>
+                <constraint firstItem="6dH-Gr-LuM" firstAttribute="leading" secondItem="Fr8-NJ-uFt" secondAttribute="leading" id="ebk-1q-I7J"/>
+                <constraint firstItem="Dsp-vE-HHE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ehF-dF-vVr"/>
+                <constraint firstItem="4XF-C3-RHY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="plL-Wi-ARB"/>
+                <constraint firstItem="Fr8-NJ-uFt" firstAttribute="top" secondItem="Dsp-vE-HHE" secondAttribute="bottom" constant="8" id="sEE-Bs-O56"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4XF-C3-RHY" secondAttribute="bottom" id="yan-cX-6xZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="201" y="-186"/>
+        </view>
+    </objects>
+</document>

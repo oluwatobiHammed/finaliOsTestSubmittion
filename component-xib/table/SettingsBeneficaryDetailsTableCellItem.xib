@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="110" id="c7o-xf-eum" customClass="SettingsBeneficaryDetailsTableCellItem" customModule="FCMB_Mobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c7o-xf-eum" id="Nh6-Ny-Wa8">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJY-Ty-c1a" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                        <rect key="frame" x="10" y="28" width="150" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#828282"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XI7-3e-BW2" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                        <rect key="frame" x="10" y="60" width="150" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#4F4F4F"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIh-9F-52J" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                        <rect key="frame" x="170" y="28" width="150" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#828282"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8W-4F-H7M" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                        <rect key="frame" x="170" y="60" width="150" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#4F4F4F"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLH-xZ-4cP" customClass="IconButton" customModule="FCMB_Mobile" customModuleProvider="target">
+                        <rect key="frame" x="330" y="39" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="6Fe-Xs-fYB"/>
+                            <constraint firstAttribute="height" constant="30" id="klg-XT-NKO"/>
+                        </constraints>
+                        <state key="normal" title="Del"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="icon" value="bin"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="drawOval" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="deleteButtonClicked" destination="c7o-xf-eum" eventType="touchUpInside" id="Wea-xM-AQP"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XI7-3e-BW2" firstAttribute="leading" secondItem="SJY-Ty-c1a" secondAttribute="leading" id="0p9-TL-Twx"/>
+                    <constraint firstItem="XLH-xZ-4cP" firstAttribute="centerY" secondItem="Nh6-Ny-Wa8" secondAttribute="centerY" id="4en-jV-Y2I"/>
+                    <constraint firstAttribute="trailing" secondItem="XLH-xZ-4cP" secondAttribute="trailing" constant="15" id="4g1-L1-4Se"/>
+                    <constraint firstItem="XI7-3e-BW2" firstAttribute="top" secondItem="SJY-Ty-c1a" secondAttribute="bottom" constant="11" id="8VK-jp-iU4"/>
+                    <constraint firstItem="e8W-4F-H7M" firstAttribute="width" secondItem="uIh-9F-52J" secondAttribute="width" id="AAx-5a-ZVn"/>
+                    <constraint firstItem="SJY-Ty-c1a" firstAttribute="leading" secondItem="Nh6-Ny-Wa8" secondAttribute="leading" constant="10" id="Aq2-ji-Cg5"/>
+                    <constraint firstItem="uIh-9F-52J" firstAttribute="leading" secondItem="SJY-Ty-c1a" secondAttribute="trailing" constant="10" id="GVA-mC-EnF"/>
+                    <constraint firstItem="e8W-4F-H7M" firstAttribute="leading" secondItem="uIh-9F-52J" secondAttribute="leading" id="cXc-Ph-1y7"/>
+                    <constraint firstItem="SJY-Ty-c1a" firstAttribute="width" secondItem="Nh6-Ny-Wa8" secondAttribute="width" multiplier="0.4" id="dcN-L9-Umf"/>
+                    <constraint firstItem="uIh-9F-52J" firstAttribute="top" secondItem="SJY-Ty-c1a" secondAttribute="top" id="fo0-hw-V3k"/>
+                    <constraint firstItem="SJY-Ty-c1a" firstAttribute="centerY" secondItem="Nh6-Ny-Wa8" secondAttribute="centerY" multiplier="0.7" id="pH8-8n-dxT"/>
+                    <constraint firstItem="e8W-4F-H7M" firstAttribute="top" secondItem="uIh-9F-52J" secondAttribute="bottom" constant="11" id="r7L-ig-Fa0"/>
+                    <constraint firstItem="XI7-3e-BW2" firstAttribute="width" secondItem="SJY-Ty-c1a" secondAttribute="width" id="vwq-cz-AH2"/>
+                    <constraint firstItem="uIh-9F-52J" firstAttribute="width" secondItem="Nh6-Ny-Wa8" secondAttribute="width" multiplier="0.4" id="y1J-bE-KUH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deleteButton" destination="XLH-xZ-4cP" id="8iN-55-xkL"/>
+                <outlet property="titleOne" destination="SJY-Ty-c1a" id="npa-EO-1dA"/>
+                <outlet property="titleTwo" destination="uIh-9F-52J" id="WBE-8m-Aph"/>
+                <outlet property="valueOne" destination="XI7-3e-BW2" id="6bM-ng-jcQ"/>
+                <outlet property="valueTwo" destination="e8W-4F-H7M" id="fvW-Nb-Cmc"/>
+            </connections>
+            <point key="canvasLocation" x="93.5" y="-10"/>
+        </tableViewCell>
+    </objects>
+</document>

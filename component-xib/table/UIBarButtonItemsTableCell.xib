@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="85" id="epU-nW-0VR" customClass="UIBarButtonItemsTableCell" customModule="FCMB_Mobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="epU-nW-0VR" id="lnL-go-ULj">
+                <rect key="frame" x="0.0" y="0.0" width="464" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUz-Cq-gGI" customClass="ExpenseManagerToolPersonIcon" customModule="FCMB_Mobile" customModuleProvider="target">
+                        <rect key="frame" x="10" y="25" width="30" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Yic-Pn-vt7"/>
+                            <constraint firstAttribute="height" constant="30" id="kLb-Ad-Ad3"/>
+                        </constraints>
+                    </view>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account_fcmb" translatesAutoresizingMaskIntoConstraints="NO" id="fIg-g0-tWP">
+                        <rect key="frame" x="10" y="25" width="30" height="30"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtg-NV-u4x" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                        <rect key="frame" x="50" y="18.5" width="404" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYD-sy-0Iy">
+                        <rect key="frame" x="50" y="39.5" width="404" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="uVO-2j-9bu"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW2-AX-MXP" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                        <rect key="frame" x="50" y="40.5" width="404" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                                <real key="value" value="-1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="Light"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wYD-sy-0Iy" firstAttribute="leading" secondItem="tUz-Cq-gGI" secondAttribute="trailing" constant="10" id="4fD-2p-mhg"/>
+                    <constraint firstItem="fIg-g0-tWP" firstAttribute="width" secondItem="tUz-Cq-gGI" secondAttribute="width" id="6qp-mG-cq4"/>
+                    <constraint firstItem="fIg-g0-tWP" firstAttribute="leading" secondItem="tUz-Cq-gGI" secondAttribute="leading" id="Eu0-fR-IMB"/>
+                    <constraint firstItem="OW2-AX-MXP" firstAttribute="trailing" secondItem="wYD-sy-0Iy" secondAttribute="trailing" id="LF8-pk-ofh"/>
+                    <constraint firstAttribute="trailing" secondItem="wYD-sy-0Iy" secondAttribute="trailing" constant="10" id="PoS-mY-WVy"/>
+                    <constraint firstItem="OW2-AX-MXP" firstAttribute="leading" secondItem="wYD-sy-0Iy" secondAttribute="leading" id="QEO-qZ-c14"/>
+                    <constraint firstItem="wYD-sy-0Iy" firstAttribute="centerY" secondItem="lnL-go-ULj" secondAttribute="centerY" id="VL9-OC-UoG"/>
+                    <constraint firstItem="fIg-g0-tWP" firstAttribute="top" secondItem="tUz-Cq-gGI" secondAttribute="top" id="WvB-b8-EHB"/>
+                    <constraint firstItem="wYD-sy-0Iy" firstAttribute="leading" secondItem="xtg-NV-u4x" secondAttribute="leading" id="h5a-zm-YCD"/>
+                    <constraint firstItem="OW2-AX-MXP" firstAttribute="top" secondItem="wYD-sy-0Iy" secondAttribute="bottom" id="hsk-Yn-34G"/>
+                    <constraint firstItem="fIg-g0-tWP" firstAttribute="height" secondItem="tUz-Cq-gGI" secondAttribute="height" id="kBt-xh-kdc"/>
+                    <constraint firstItem="tUz-Cq-gGI" firstAttribute="centerY" secondItem="lnL-go-ULj" secondAttribute="centerY" id="mTZ-Xe-hfe"/>
+                    <constraint firstItem="xtg-NV-u4x" firstAttribute="centerY" secondItem="lnL-go-ULj" secondAttribute="centerY" id="oSs-DK-603"/>
+                    <constraint firstItem="tUz-Cq-gGI" firstAttribute="leading" secondItem="lnL-go-ULj" secondAttribute="leading" constant="10" id="oo2-vm-BEm"/>
+                    <constraint firstItem="wYD-sy-0Iy" firstAttribute="trailing" secondItem="xtg-NV-u4x" secondAttribute="trailing" id="qev-1n-rx0"/>
+                    <constraint firstItem="wYD-sy-0Iy" firstAttribute="top" secondItem="xtg-NV-u4x" secondAttribute="bottom" id="uy7-Av-ElX"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="oSs-DK-603"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomLabel" destination="OW2-AX-MXP" id="cx1-xI-7Hk"/>
+                <outlet property="personIcon" destination="tUz-Cq-gGI" id="VUw-jw-QK9"/>
+                <outlet property="personImageView" destination="fIg-g0-tWP" id="9iT-Yj-3DZ"/>
+                <outlet property="topLabel" destination="xtg-NV-u4x" id="06G-TJ-nAK"/>
+                <outlet property="topLabelBottomSpacer" destination="uy7-Av-ElX" id="U4g-TW-vZu"/>
+                <outlet property="topLabelCenterSpacer" destination="oSs-DK-603" id="b7S-n5-JAe"/>
+            </connections>
+            <point key="canvasLocation" x="78" y="34.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="account_fcmb" width="36" height="36"/>
+    </resources>
+</document>

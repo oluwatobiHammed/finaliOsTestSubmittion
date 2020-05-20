@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BrandSlider" customModule="FCMB_Mobile" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Jww-Xx-6tV"/>
+                <outlet property="maxLabel" destination="ItU-Wo-q9j" id="3dw-Du-FhP"/>
+                <outlet property="maxRightAnchor" destination="8VH-hv-NQQ" id="T3o-YY-VTG"/>
+                <outlet property="maxTopAnchor" destination="RDn-zg-8V8" id="vhy-zu-mGL"/>
+                <outlet property="minLabel" destination="wEk-RE-Xgc" id="80Q-EI-8W4"/>
+                <outlet property="minLeftAnchor" destination="2rJ-YW-Rdy" id="DC4-yG-fds"/>
+                <outlet property="minTopAnchor" destination="1z6-lU-T4O" id="hVs-jj-3oW"/>
+                <outlet property="slider" destination="w3J-tw-MDd" id="eKL-id-g2I"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="657" height="97"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="w3J-tw-MDd" customClass="CustomSlider" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="-2" y="36" width="661" height="31"/>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEk-RE-Xgc" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="10" width="295.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="-0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N200" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItU-Wo-q9j" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="361.5" y="10" width="295.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="-0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wEk-RE-Xgc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="1z6-lU-T4O"/>
+                <constraint firstItem="wEk-RE-Xgc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2rJ-YW-Rdy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ItU-Wo-q9j" secondAttribute="trailing" id="8VH-hv-NQQ"/>
+                <constraint firstItem="ItU-Wo-q9j" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="RDn-zg-8V8"/>
+                <constraint firstItem="w3J-tw-MDd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YLK-cf-huG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="w3J-tw-MDd" secondAttribute="trailing" id="kEL-mY-zT6"/>
+                <constraint firstItem="ItU-Wo-q9j" firstAttribute="width" secondItem="wEk-RE-Xgc" secondAttribute="width" id="q71-zn-gXD"/>
+                <constraint firstItem="w3J-tw-MDd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="36" id="qBC-u8-Ovo"/>
+                <constraint firstItem="wEk-RE-Xgc" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.45" id="z0u-bn-zEd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="179.5" y="-224.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BillsPaymentPreviewDetails" customModule="FCMB_Mobile" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="L3B-Ij-l6q" id="A6j-s7-B4r"/>
+                <outlet property="inputGroup" destination="NZB-3p-DMH" id="yFY-B2-oKQ"/>
+                <outlet property="labelOne" destination="kM3-jZ-Nmo" id="WYP-6H-CYw"/>
+                <outlet property="labelThree" destination="2Im-F7-BKp" id="sH5-Jc-lVM"/>
+                <outlet property="labelTwo" destination="UM9-d4-7ou" id="HuH-Ku-1IU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="L3B-Ij-l6q" customClass="CardView" customModule="FCMB_Mobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="594" height="164"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You'l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kM3-jZ-Nmo">
+                    <rect key="frame" x="25" y="30" width="544" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Char" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UM9-d4-7ou">
+                    <rect key="frame" x="25" y="70.5" width="544" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Im-F7-BKp">
+                    <rect key="frame" x="25" y="120.5" width="544" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZB-3p-DMH" customClass="InputFieldGroup" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="25" y="55.5" width="544" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="o5J-Hj-41G"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2Im-F7-BKp" firstAttribute="top" secondItem="NZB-3p-DMH" secondAttribute="bottom" constant="5" id="5j4-aE-oIe"/>
+                <constraint firstItem="2Im-F7-BKp" firstAttribute="leading" secondItem="UM9-d4-7ou" secondAttribute="leading" id="Mpa-5o-Uov"/>
+                <constraint firstItem="UM9-d4-7ou" firstAttribute="trailing" secondItem="kM3-jZ-Nmo" secondAttribute="trailing" id="Pmu-Xy-qWI"/>
+                <constraint firstItem="2Im-F7-BKp" firstAttribute="top" secondItem="UM9-d4-7ou" secondAttribute="bottom" constant="10" id="PoD-vP-qd9"/>
+                <constraint firstItem="NZB-3p-DMH" firstAttribute="trailing" secondItem="kM3-jZ-Nmo" secondAttribute="trailing" id="RIq-63-lsN"/>
+                <constraint firstItem="NZB-3p-DMH" firstAttribute="top" secondItem="kM3-jZ-Nmo" secondAttribute="bottom" constant="5" id="S4W-ci-CbU"/>
+                <constraint firstItem="2Im-F7-BKp" firstAttribute="trailing" secondItem="UM9-d4-7ou" secondAttribute="trailing" id="SWt-zk-GeK"/>
+                <constraint firstItem="kM3-jZ-Nmo" firstAttribute="top" secondItem="hwU-Mz-m3B" secondAttribute="top" constant="30" id="eXs-7Q-R1d"/>
+                <constraint firstItem="hwU-Mz-m3B" firstAttribute="trailing" secondItem="kM3-jZ-Nmo" secondAttribute="trailing" constant="25" id="hnA-Iz-ibs"/>
+                <constraint firstItem="UM9-d4-7ou" firstAttribute="leading" secondItem="kM3-jZ-Nmo" secondAttribute="leading" id="iTn-K9-jOD"/>
+                <constraint firstItem="UM9-d4-7ou" firstAttribute="top" secondItem="kM3-jZ-Nmo" secondAttribute="bottom" constant="20" id="lC0-tn-6ct"/>
+                <constraint firstItem="kM3-jZ-Nmo" firstAttribute="leading" secondItem="hwU-Mz-m3B" secondAttribute="leading" constant="25" id="mSb-Nw-fIv"/>
+                <constraint firstItem="NZB-3p-DMH" firstAttribute="leading" secondItem="kM3-jZ-Nmo" secondAttribute="leading" id="uav-G9-AOA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="hwU-Mz-m3B"/>
+            <point key="canvasLocation" x="143" y="-178"/>
+        </view>
+    </objects>
+</document>

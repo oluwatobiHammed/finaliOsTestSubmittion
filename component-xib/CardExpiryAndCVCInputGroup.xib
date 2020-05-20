@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardExpiryAndCVCInputGroup" customModule="FCMB_Mobile" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="XLy-VD-79c"/>
+                <outlet property="cvcInput" destination="Omv-8v-IX3" id="ATg-sK-OZ9"/>
+                <outlet property="cvvLabel" destination="DJy-qO-Cvz" id="5qF-O3-qkf"/>
+                <outlet property="expiryDateInput" destination="iFp-9g-f9J" id="lTi-nz-lUM"/>
+                <outlet property="expiryLabel" destination="TL7-af-8Fb" id="A7j-xb-Hxe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="523" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="WAs-NA-ghI">
+                    <rect key="frame" x="0.0" y="0.0" width="523" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDj-Jg-5R8">
+                            <rect key="frame" x="0.0" y="0.0" width="236.5" height="100"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFp-9g-f9J" customClass="MonthYearPickerInputGroup" customModule="FCMB_Mobile" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="35.5" width="237" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="qva-Rc-rRt"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="leftIcon" value="calendar"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPIRY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL7-af-8Fb">
+                                    <rect key="frame" x="0.0" y="0.0" width="236.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="iFp-9g-f9J" firstAttribute="leading" secondItem="XDj-Jg-5R8" secondAttribute="leading" id="7iQ-Wa-xel"/>
+                                <constraint firstAttribute="trailing" secondItem="TL7-af-8Fb" secondAttribute="trailing" id="Bjw-ZJ-gfF"/>
+                                <constraint firstItem="iFp-9g-f9J" firstAttribute="top" secondItem="TL7-af-8Fb" secondAttribute="bottom" constant="15" id="Bkc-3Z-wsu"/>
+                                <constraint firstItem="TL7-af-8Fb" firstAttribute="top" secondItem="XDj-Jg-5R8" secondAttribute="top" id="Ynh-8r-mcL"/>
+                                <constraint firstItem="TL7-af-8Fb" firstAttribute="leading" secondItem="XDj-Jg-5R8" secondAttribute="leading" id="eNJ-bM-XyA"/>
+                                <constraint firstAttribute="trailing" secondItem="iFp-9g-f9J" secondAttribute="trailing" constant="-0.5" id="xQ6-JT-lXA"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rkf-w6-1my">
+                            <rect key="frame" x="286.5" y="0.0" width="236.5" height="100"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CVV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJy-qO-Cvz">
+                                    <rect key="frame" x="0.0" y="0.0" width="34" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Omv-8v-IX3" customClass="InputFieldGroup" customModule="FCMB_Mobile" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="35.5" width="236.5" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="BGZ-os-k0e"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="leftIcon" value="card"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="keyboardType" value="number"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="DJy-qO-Cvz" firstAttribute="top" secondItem="Rkf-w6-1my" secondAttribute="top" id="RBg-Yg-fKI"/>
+                                <constraint firstAttribute="trailing" secondItem="Omv-8v-IX3" secondAttribute="trailing" id="WAP-Mt-NHy"/>
+                                <constraint firstItem="Omv-8v-IX3" firstAttribute="top" secondItem="DJy-qO-Cvz" secondAttribute="bottom" constant="15" id="aRr-M4-MaP"/>
+                                <constraint firstItem="Omv-8v-IX3" firstAttribute="leading" secondItem="Rkf-w6-1my" secondAttribute="leading" id="aam-tf-ZJk"/>
+                                <constraint firstItem="DJy-qO-Cvz" firstAttribute="leading" secondItem="Rkf-w6-1my" secondAttribute="leading" id="gsr-Gy-Fv3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="WAs-NA-ghI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="TXO-E7-Qdp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WAs-NA-ghI" secondAttribute="trailing" id="fT4-Ci-nSB"/>
+                <constraint firstItem="WAs-NA-ghI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jPA-bf-R3T"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="WAs-NA-ghI" secondAttribute="bottom" id="szl-pG-IKO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="136.5" y="-232"/>
+        </view>
+    </objects>
+</document>

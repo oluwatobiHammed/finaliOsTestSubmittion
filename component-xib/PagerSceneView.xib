@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PagerSceneView" customModule="FCMB_Mobile" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="H8P-cQ-Ppr" id="A63-ZF-EoU"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="AIW-kJ-rJi"/>
+                <outlet property="pageControl" destination="qM7-iw-wG4" id="Kzs-AO-bpi"/>
+                <outlet property="pagerControlHeight" destination="4YY-ug-g66" id="RrK-Kr-8Ne"/>
+                <outlet property="scrollView" destination="LVt-Ds-hmX" id="87H-2k-uVp"/>
+                <outlet property="viewContentWidthAnchor" destination="3Fe-Nh-oib" id="hYC-sY-Py1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="328"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVt-Ds-hmX">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="328"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8P-cQ-Ppr">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="328"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="H8P-cQ-Ppr" firstAttribute="width" secondItem="LVt-Ds-hmX" secondAttribute="width" id="3Fe-Nh-oib"/>
+                        <constraint firstAttribute="trailing" secondItem="H8P-cQ-Ppr" secondAttribute="trailing" id="USA-hI-DRw"/>
+                        <constraint firstItem="H8P-cQ-Ppr" firstAttribute="top" secondItem="LVt-Ds-hmX" secondAttribute="top" id="fiz-YP-CGe"/>
+                        <constraint firstItem="H8P-cQ-Ppr" firstAttribute="leading" secondItem="LVt-Ds-hmX" secondAttribute="leading" id="gh5-v3-imW"/>
+                        <constraint firstItem="H8P-cQ-Ppr" firstAttribute="height" secondItem="LVt-Ds-hmX" secondAttribute="height" id="yaw-ZN-5ah"/>
+                        <constraint firstAttribute="bottom" secondItem="H8P-cQ-Ppr" secondAttribute="bottom" id="yhb-QZ-qLF"/>
+                    </constraints>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="qM7-iw-wG4">
+                    <rect key="frame" x="281" y="304" width="39" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="4YY-ug-g66"/>
+                    </constraints>
+                </pageControl>
+            </subviews>
+            <constraints>
+                <constraint firstItem="qM7-iw-wG4" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="13" id="JXg-6H-tCg"/>
+                <constraint firstItem="LVt-Ds-hmX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="cS0-i9-9uu"/>
+                <constraint firstItem="LVt-Ds-hmX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hBb-Wp-bde"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LVt-Ds-hmX" secondAttribute="trailing" id="pst-QX-Ewf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LVt-Ds-hmX" secondAttribute="bottom" id="qeQ-W4-n2O"/>
+                <constraint firstItem="qM7-iw-wG4" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="zBz-Pp-PxL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="79" y="-155"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsBeneficaryDetailsTableCellHeader" customModule="FCMB_Mobile" customModuleProvider="target">
+            <connections>
+                <outlet property="borderDivider" destination="Fdp-5c-QyL" id="kaS-yZ-MiZ"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="5xX-bj-Oo9"/>
+                <outlet property="label" destination="w6j-gD-uYS" id="tHX-c1-SXQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6j-gD-uYS" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="16" y="25.5" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#5F138D"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fdp-5c-QyL">
+                    <rect key="frame" x="63" y="34.5" width="312" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="TI6-yM-7ga"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="w6j-gD-uYS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="52V-ET-Vov"/>
+                <constraint firstItem="Fdp-5c-QyL" firstAttribute="leading" secondItem="w6j-gD-uYS" secondAttribute="trailing" constant="5" id="Ov1-0b-BAo"/>
+                <constraint firstItem="w6j-gD-uYS" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="VJ1-5F-JAs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="w6j-gD-uYS" secondAttribute="trailing" constant="20" id="a76-iO-9iY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Fdp-5c-QyL" secondAttribute="trailing" id="mlU-Ju-O9G"/>
+                <constraint firstItem="Fdp-5c-QyL" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="oxL-F9-lfj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="-245"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InternationalTransferSummary" customModule="FCMB_Mobile" customModuleProvider="target">
+            <connections>
+                <outlet property="amountLabel" destination="NQS-Zc-Nfg" id="vzA-i1-i6d"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="1k4-Or-oIM"/>
+                <outlet property="dateLabel" destination="ZVb-BB-6J0" id="oXC-jQ-GzZ"/>
+                <outlet property="destinationLabel" destination="CE4-ES-KwY" id="7rg-Ui-Gfu"/>
+                <outlet property="rightBottomLabel" destination="0gP-lw-6Yh" id="P4e-1e-PJE"/>
+                <outlet property="statusLabel" destination="Maj-z9-qcn" id="jei-4O-V3L"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="724" height="138"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 2,000,000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQS-Zc-Nfg" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="10" y="20" width="534" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maj-z9-qcn" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="594" y="18" width="120" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="1PM-gj-cqe"/>
+                        <constraint firstAttribute="width" constant="120" id="8ed-GI-Rcb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                            <real key="value" value="-2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transfer to: All Saints University" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CE4-ES-KwY" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="10" y="56" width="704" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initiated 24 May 18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVb-BB-6J0" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="10" y="96.5" width="145" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#BDBDBD"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="right" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gP-lw-6Yh" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="678.5" y="96.5" width="35.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZVb-BB-6J0" firstAttribute="leading" secondItem="CE4-ES-KwY" secondAttribute="leading" id="139-m0-4Na"/>
+                <constraint firstItem="ZVb-BB-6J0" firstAttribute="top" secondItem="CE4-ES-KwY" secondAttribute="bottom" constant="20" id="17s-nq-brg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NQS-Zc-Nfg" secondAttribute="trailing" constant="180" id="Blo-JT-N49"/>
+                <constraint firstItem="CE4-ES-KwY" firstAttribute="top" secondItem="NQS-Zc-Nfg" secondAttribute="bottom" constant="15" id="Cnd-xh-C3t"/>
+                <constraint firstItem="CE4-ES-KwY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="EFq-7b-SCX"/>
+                <constraint firstItem="Maj-z9-qcn" firstAttribute="centerY" secondItem="NQS-Zc-Nfg" secondAttribute="centerY" id="ELL-m3-qfA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CE4-ES-KwY" secondAttribute="trailing" constant="10" id="RZD-ld-aeH"/>
+                <constraint firstItem="0gP-lw-6Yh" firstAttribute="trailing" secondItem="Maj-z9-qcn" secondAttribute="trailing" id="VEC-pa-8w1"/>
+                <constraint firstItem="0gP-lw-6Yh" firstAttribute="centerY" secondItem="ZVb-BB-6J0" secondAttribute="centerY" id="dem-5H-OsA"/>
+                <constraint firstItem="NQS-Zc-Nfg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="ozu-tR-6YY"/>
+                <constraint firstItem="NQS-Zc-Nfg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="ung-sr-M3X"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Maj-z9-qcn" secondAttribute="trailing" constant="10" id="xOE-hk-gPG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ZVb-BB-6J0" secondAttribute="bottom" constant="20.5" id="z1c-kZ-gQX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="238" y="-266"/>
+        </view>
+    </objects>
+</document>

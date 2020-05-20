@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SavingsPlanSummaryListItem" customModule="FCMB_Mobile" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="1hz-WZ-Vb6" id="BM7-qR-VvR"/>
+                <outlet property="imageViewHeight" destination="JFG-VM-xil" id="yg6-Uf-DD0"/>
+                <outlet property="planImageView" destination="n7e-qa-tb6" id="yxv-sm-cZ3"/>
+                <outlet property="priceView" destination="vSB-Aa-Wum" id="4WU-4G-Yyo"/>
+                <outlet property="progressTracker" destination="ksj-T2-emg" id="Ihb-c9-bUP"/>
+                <outlet property="savedView" destination="SDV-f2-JnT" id="F9F-vG-26X"/>
+                <outlet property="titleView" destination="FEI-Zl-Atw" id="AaH-Y1-1OR"/>
+                <outlet property="trackLabel" destination="4Lg-zL-R9W" id="TBW-dd-gKZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1hz-WZ-Vb6">
+            <rect key="frame" x="0.0" y="0.0" width="825" height="315"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_banner" translatesAutoresizingMaskIntoConstraints="NO" id="n7e-qa-tb6">
+                    <rect key="frame" x="0.0" y="0.0" width="825" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="JFG-VM-xil"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Holiday Trip to Dubai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEI-Zl-Atw" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="20" y="210" width="517.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#494949"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="Bold"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N 5,310,000.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSB-Aa-Wum" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="557.5" y="210" width="247.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#494949"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="Bold"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N 875,000.00 saved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDV-f2-JnT" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="20" y="251" width="154.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On Track" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lg-zL-R9W" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="736" y="251" width="69" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="verticalSpacing">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="horizontalSpacing">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ksj-T2-emg" customClass="CustomSlider" customModule="FCMB_Mobile" customModuleProvider="target">
+                    <rect key="frame" x="18" y="285" width="789" height="31"/>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ksj-T2-emg" firstAttribute="leading" secondItem="SDV-f2-JnT" secondAttribute="leading" id="2Th-bN-7AA"/>
+                <constraint firstItem="FEI-Zl-Atw" firstAttribute="leading" secondItem="1hz-WZ-Vb6" secondAttribute="leading" constant="20" id="4Em-HU-NRI"/>
+                <constraint firstItem="ksj-T2-emg" firstAttribute="top" secondItem="SDV-f2-JnT" secondAttribute="bottom" constant="13" id="C9U-gU-4d5"/>
+                <constraint firstItem="n7e-qa-tb6" firstAttribute="top" secondItem="1hz-WZ-Vb6" secondAttribute="top" id="JLk-VL-0Kg"/>
+                <constraint firstItem="ksj-T2-emg" firstAttribute="trailing" secondItem="4Lg-zL-R9W" secondAttribute="trailing" id="MFX-qh-5jF"/>
+                <constraint firstItem="vSB-Aa-Wum" firstAttribute="leading" secondItem="FEI-Zl-Atw" secondAttribute="trailing" constant="20" id="Qhj-xb-BBH"/>
+                <constraint firstItem="SDV-f2-JnT" firstAttribute="centerY" secondItem="4Lg-zL-R9W" secondAttribute="centerY" id="RcR-c2-NpG"/>
+                <constraint firstItem="SDV-f2-JnT" firstAttribute="leading" secondItem="FEI-Zl-Atw" secondAttribute="leading" id="UBZ-qH-2oG"/>
+                <constraint firstItem="vSB-Aa-Wum" firstAttribute="width" secondItem="1hz-WZ-Vb6" secondAttribute="width" multiplier="0.3" id="Vv0-95-Jqa"/>
+                <constraint firstItem="4Lg-zL-R9W" firstAttribute="trailing" secondItem="vSB-Aa-Wum" secondAttribute="trailing" id="Yi1-Xu-JA3"/>
+                <constraint firstItem="FEI-Zl-Atw" firstAttribute="top" secondItem="n7e-qa-tb6" secondAttribute="bottom" constant="10" id="bBR-8v-cBn"/>
+                <constraint firstAttribute="trailing" secondItem="vSB-Aa-Wum" secondAttribute="trailing" constant="20" id="dxW-si-iop"/>
+                <constraint firstAttribute="bottom" secondItem="ksj-T2-emg" secondAttribute="bottom" id="fkJ-bs-Vrt"/>
+                <constraint firstItem="n7e-qa-tb6" firstAttribute="leading" secondItem="1hz-WZ-Vb6" secondAttribute="leading" id="hTx-1W-7dB"/>
+                <constraint firstAttribute="trailing" secondItem="n7e-qa-tb6" secondAttribute="trailing" id="ptT-3F-SVb"/>
+                <constraint firstItem="vSB-Aa-Wum" firstAttribute="top" secondItem="FEI-Zl-Atw" secondAttribute="top" id="qzD-nf-6tH"/>
+                <constraint firstItem="4Lg-zL-R9W" firstAttribute="top" secondItem="vSB-Aa-Wum" secondAttribute="bottom" constant="20" id="u9h-Tx-V4f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="jJh-bD-Vwo"/>
+            <point key="canvasLocation" x="258.5" y="-83.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="splash_banner" width="1080" height="1101"/>
+    </resources>
+</document>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="147" id="PaC-Ef-2Ks" customClass="SettingsBeneficaryTableCellTableViewCell" customModule="FCMB_Mobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="521" height="147"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PaC-Ef-2Ks" id="qN0-Uz-2Oj">
+                <rect key="frame" x="0.0" y="0.0" width="521" height="146.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96X-xZ-Sem">
+                        <rect key="frame" x="0.0" y="0.0" width="521" height="136.5"/>
+                        <subviews>
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiF-qA-OLe" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                                <rect key="frame" x="15" y="41" width="491" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sizeBy">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="themeFont" value="SemiBold"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYg-sT-gjy" customClass="BrandLabel" customModule="FCMB_Mobile" customModuleProvider="target">
+                                <rect key="frame" x="15" y="71.5" width="491" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="hexColor" value="#828282"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHL-Lx-l3m" customClass="IconButton" customModule="FCMB_Mobile" customModuleProvider="target">
+                                <rect key="frame" x="481" y="53.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="8HD-64-3vB"/>
+                                    <constraint firstAttribute="height" constant="30" id="K2o-w3-mnI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="icon" value="caret_down"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="drawOval" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="colorIcon">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdD-Ku-EGV" customClass="RadioButton" customModule="FCMB_Mobile" customModuleProvider="target">
+                                <rect key="frame" x="481" y="53.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qTr-Lg-e2Q"/>
+                                    <constraint firstAttribute="width" constant="30" id="qnH-i8-qNT"/>
+                                </constraints>
+                                <state key="normal" title="Done"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jHL-Lx-l3m" firstAttribute="centerY" secondItem="96X-xZ-Sem" secondAttribute="centerY" id="3qa-ei-oNo"/>
+                            <constraint firstAttribute="trailing" secondItem="jHL-Lx-l3m" secondAttribute="trailing" constant="10" id="8eV-6K-GEY"/>
+                            <constraint firstItem="YYg-sT-gjy" firstAttribute="leading" secondItem="IiF-qA-OLe" secondAttribute="leading" id="AgP-nG-P9O"/>
+                            <constraint firstItem="YYg-sT-gjy" firstAttribute="top" secondItem="IiF-qA-OLe" secondAttribute="bottom" constant="10" id="LdN-sp-f8q"/>
+                            <constraint firstItem="cdD-Ku-EGV" firstAttribute="centerY" secondItem="96X-xZ-Sem" secondAttribute="centerY" id="OeF-Ro-pep"/>
+                            <constraint firstAttribute="trailing" secondItem="cdD-Ku-EGV" secondAttribute="trailing" constant="10" id="Sbl-jc-jxZ"/>
+                            <constraint firstItem="IiF-qA-OLe" firstAttribute="centerY" secondItem="96X-xZ-Sem" secondAttribute="centerY" multiplier="0.75" id="Sq7-8I-QnW"/>
+                            <constraint firstItem="YYg-sT-gjy" firstAttribute="trailing" secondItem="IiF-qA-OLe" secondAttribute="trailing" id="p4D-4f-d2d"/>
+                            <constraint firstAttribute="trailing" secondItem="IiF-qA-OLe" secondAttribute="trailing" constant="15" id="uJq-VJ-N6E"/>
+                            <constraint firstItem="IiF-qA-OLe" firstAttribute="leading" secondItem="96X-xZ-Sem" secondAttribute="leading" constant="15" id="vVV-ex-Az5"/>
+                            <constraint firstItem="IiF-qA-OLe" firstAttribute="centerY" secondItem="96X-xZ-Sem" secondAttribute="centerY" id="vyP-m5-V1Z"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vyP-m5-V1Z"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="96X-xZ-Sem" firstAttribute="leading" secondItem="qN0-Uz-2Oj" secondAttribute="leading" id="9V9-Y0-ASi"/>
+                    <constraint firstAttribute="trailing" secondItem="96X-xZ-Sem" secondAttribute="trailing" id="Fm2-uX-O0b"/>
+                    <constraint firstItem="96X-xZ-Sem" firstAttribute="top" secondItem="qN0-Uz-2Oj" secondAttribute="top" id="IgM-0I-4Zc"/>
+                    <constraint firstAttribute="bottom" secondItem="96X-xZ-Sem" secondAttribute="bottom" constant="10" id="jwc-ey-d5a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cardContent" destination="96X-xZ-Sem" id="cmy-6l-hf2"/>
+                <outlet property="detailViewTextLabel" destination="YYg-sT-gjy" id="qrs-L2-Vqe"/>
+                <outlet property="disclosureButton" destination="jHL-Lx-l3m" id="jI5-LL-FMS"/>
+                <outlet property="fullVerticalCenter" destination="vyP-m5-V1Z" id="Vx3-dy-eax"/>
+                <outlet property="radioButton" destination="cdD-Ku-EGV" id="kh5-r6-Mhl"/>
+                <outlet property="semiVerticalCenter" destination="Sq7-8I-QnW" id="Oe0-4P-E9d"/>
+                <outlet property="textViewLabel" destination="IiF-qA-OLe" id="kQk-ww-ZeF"/>
+            </connections>
+            <point key="canvasLocation" x="199.5" y="-123.5"/>
+        </tableViewCell>
+    </objects>
+</document>
