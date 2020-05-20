@@ -1,0 +1,1345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56B2D51462AFE4B0572F1644 /* Pods_CustomLoginDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FC198F18E7671BECD8869C /* Pods_CustomLoginDemo.framework */; };
+		830C3D8F22E7523E001FA4E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C3D8E22E7523E001FA4E7 /* Constants.swift */; };
+		830C3D9222E755F6001FA4E7 /* loginbg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 830C3D9122E755F6001FA4E7 /* loginbg.mp4 */; };
+		8314D43322E644CC001D044A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314D43222E644CC001D044A /* AppDelegate.swift */; };
+		8314D43522E644CC001D044A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314D43422E644CC001D044A /* SceneDelegate.swift */; };
+		8314D43722E644CC001D044A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314D43622E644CC001D044A /* ViewController.swift */; };
+		8314D43A22E644CC001D044A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8314D43822E644CC001D044A /* Main.storyboard */; };
+		8314D43C22E644CD001D044A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8314D43B22E644CD001D044A /* Assets.xcassets */; };
+		8314D43F22E644CD001D044A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8314D43D22E644CD001D044A /* LaunchScreen.storyboard */; };
+		8314D44722E64515001D044A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314D44622E64515001D044A /* SignUpViewController.swift */; };
+		8314D44922E64520001D044A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314D44822E64520001D044A /* LoginViewController.swift */; };
+		8314D44B22E6452C001D044A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314D44A22E6452C001D044A /* HomeViewController.swift */; };
+		8397D20E22E64A7500CB78DD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397D20D22E64A7500CB78DD /* Utilities.swift */; };
+		CED400182475592B006BA130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CED400172475592B006BA130 /* GoogleService-Info.plist */; };
+		CED4001A24756853006BA130 /* SiginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4001924756853006BA130 /* SiginViewModel.swift */; };
+		CED4FE282473A984006BA130 /* BaseViewModelPopulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE272473A984006BA130 /* BaseViewModelPopulator.swift */; };
+		CED4FE2E2473A9E6006BA130 /* DynamicFormTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE2A2473A9E6006BA130 /* DynamicFormTableViewModel.swift */; };
+		CED4FE2F2473A9E6006BA130 /* DynamicFormViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE2B2473A9E6006BA130 /* DynamicFormViewDatasource.swift */; };
+		CED4FE302473A9E6006BA130 /* DynamicFormSectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE2C2473A9E6006BA130 /* DynamicFormSectionData.swift */; };
+		CED4FE312473A9E6006BA130 /* DynamicFormSectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE2D2473A9E6006BA130 /* DynamicFormSectionRow.swift */; };
+		CED4FE3D2473AA8D006BA130 /* RadioButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE362473AA8D006BA130 /* RadioButtonGroup.swift */; };
+		CED4FE3E2473AA8D006BA130 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE372473AA8D006BA130 /* IconButton.swift */; };
+		CED4FE3F2473AA8D006BA130 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE382473AA8D006BA130 /* RadioButton.swift */; };
+		CED4FE402473AA8D006BA130 /* ButtomActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE392473AA8D006BA130 /* ButtomActionButton.swift */; };
+		CED4FE482473AB05006BA130 /* PinEntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE422473AB05006BA130 /* PinEntryPoint.swift */; };
+		CED4FE492473AB05006BA130 /* BrandLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE432473AB05006BA130 /* BrandLabel.swift */; };
+		CED4FE4A2473AB05006BA130 /* CaptionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE442473AB05006BA130 /* CaptionLabel.swift */; };
+		CED4FE4B2473AB05006BA130 /* LabelWithKeyboardGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE452473AB05006BA130 /* LabelWithKeyboardGesture.swift */; };
+		CED4FE4C2473AB05006BA130 /* RoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE462473AB05006BA130 /* RoundedLabel.swift */; };
+		CED4FE4D2473AB05006BA130 /* IconTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE472473AB05006BA130 /* IconTextLabel.swift */; };
+		CED4FE502473AB82006BA130 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE4F2473AB82006BA130 /* UILabelExtension.swift */; };
+		CED4FE522473AC05006BA130 /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE512473AC05006BA130 /* StringResource.swift */; };
+		CED4FE542473ACC1006BA130 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE532473ACC1006BA130 /* Theme.swift */; };
+		CED4FE562473AD67006BA130 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE552473AD67006BA130 /* UIColor.swift */; };
+		CED4FE582473ADCD006BA130 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE572473ADCD006BA130 /* Typography.swift */; };
+		CED4FE622473B1D5006BA130 /* RadioListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE612473B1D5006BA130 /* RadioListTable.swift */; };
+		CED4FE642473B21E006BA130 /* SubTitleTableCellWithRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE632473B21E006BA130 /* SubTitleTableCellWithRadioButton.swift */; };
+		CED4FE662473B25F006BA130 /* TableCellWithRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE652473B25F006BA130 /* TableCellWithRadioButton.swift */; };
+		CED4FE682473B2AC006BA130 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE672473B2AC006BA130 /* UITableViewCellExtension.swift */; };
+		CED4FE6D2473B4B7006BA130 /* FormValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE6C2473B4B7006BA130 /* FormValidators.swift */; };
+		CED4FE6F2473B53E006BA130 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE6E2473B53E006BA130 /* StringExtension.swift */; };
+		CED4FE712473B78D006BA130 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE702473B78D006BA130 /* UIViewExtension.swift */; };
+		CED4FE732473B88A006BA130 /* ActivityIndicatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE722473B88A006BA130 /* ActivityIndicatorExtension.swift */; };
+		CED4FE762473B99E006BA130 /* DynamicSimpleInputGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE752473B99E006BA130 /* DynamicSimpleInputGroupViewModel.swift */; };
+		CED4FE782473B9FE006BA130 /* DynamicFormDateTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE772473B9FE006BA130 /* DynamicFormDateTimeViewModel.swift */; };
+		CED4FE7B2473BA5D006BA130 /* DatePickerInputGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE7A2473BA5D006BA130 /* DatePickerInputGroup.swift */; };
+		CED4FE7D2473BB36006BA130 /* RecurringFieldsPopulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE7C2473BB36006BA130 /* RecurringFieldsPopulator.swift */; };
+		CED4FE7F2473BC47006BA130 /* DynamicFormSegmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE7E2473BC47006BA130 /* DynamicFormSegmentViewModel.swift */; };
+		CED4FE832473BD98006BA130 /* DynamicFormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE822473BD98006BA130 /* DynamicFormTableViewCell.swift */; };
+		CED4FE872473BF06006BA130 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE862473BF06006BA130 /* UIButtonExtension.swift */; };
+		CED4FE8B2473C580006BA130 /* SigUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE8A2473C580006BA130 /* SigUpViewModel.swift */; };
+		CED4FE8E2473C79B006BA130 /* ValidateSignUpProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE8D2473C79B006BA130 /* ValidateSignUpProfileRequest.swift */; };
+		CED4FE902473C7E4006BA130 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE8F2473C7E4006BA130 /* Networking.swift */; };
+		CED4FE922473CB77006BA130 /* DynamicFormTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE912473CB77006BA130 /* DynamicFormTable.swift */; };
+		CED4FE942473CDC7006BA130 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE932473CDC7006BA130 /* BaseViewController.swift */; };
+		CED4FE962473CE26006BA130 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE952473CE26006BA130 /* ViewControllerExtension.swift */; };
+		CED4FE982473CEBF006BA130 /* ToastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE972473CEBF006BA130 /* ToastPresenter.swift */; };
+		CED4FE9B2473CF26006BA130 /* NetErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE9A2473CF26006BA130 /* NetErrorResponse.swift */; };
+		CED4FE9D2473CFAF006BA130 /* StatusMessagesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE9C2473CFAF006BA130 /* StatusMessagesPresenter.swift */; };
+		CED4FEA02473D102006BA130 /* BottomSheetConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FE9F2473D102006BA130 /* BottomSheetConfig.swift */; };
+		CED4FEA32473D18C006BA130 /* SimpleMessageWithHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FEA22473D18C006BA130 /* SimpleMessageWithHeader.swift */; };
+		CED4FEA62473D270006BA130 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FEA52473D270006BA130 /* BottomSheetViewController.swift */; };
+		CED4FEA82473D31E006BA130 /* RoundedIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FEA72473D31E006BA130 /* RoundedIconButton.swift */; };
+		CED4FEAA2473DCF9006BA130 /* UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FEA92473DCF9006BA130 /* UIResponder.swift */; };
+		CED4FEAE2473E339006BA130 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FEAD2473E339006BA130 /* LoadingViewController.swift */; };
+		CED4FEB02473E919006BA130 /* GlobalControllerStoryID.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FEAF2473E919006BA130 /* GlobalControllerStoryID.swift */; };
+		CED4FF2D2473FBA9006BA130 /* InteractableCreditCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEBF2473FBA8006BA130 /* InteractableCreditCardView.xib */; };
+		CED4FF2E2473FBA9006BA130 /* CollapsibleFormGroupItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEC02473FBA8006BA130 /* CollapsibleFormGroupItem.xib */; };
+		CED4FF2F2473FBA9006BA130 /* BranchInputGroupSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEC12473FBA8006BA130 /* BranchInputGroupSelector.xib */; };
+		CED4FF302473FBA9006BA130 /* ConfirmPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEC22473FBA8006BA130 /* ConfirmPopupView.xib */; };
+		CED4FF312473FBA9006BA130 /* BillsPaymentPreviewDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEC32473FBA8006BA130 /* BillsPaymentPreviewDetails.xib */; };
+		CED4FF322473FBA9006BA130 /* RIBUserFlowScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEC42473FBA9006BA130 /* RIBUserFlowScreen.xib */; };
+		CED4FF332473FBA9006BA130 /* BeneficaryHeaderTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEC52473FBA9006BA130 /* BeneficaryHeaderTitle.xib */; };
+		CED4FF342473FBA9006BA130 /* QRCodeAmountDisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEC62473FBA9006BA130 /* QRCodeAmountDisplayView.xib */; };
+		CED4FF352473FBA9006BA130 /* BulkTransactionSummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEC72473FBA9006BA130 /* BulkTransactionSummaryView.xib */; };
+		CED4FF362473FBA9006BA130 /* InputWithDualMessageDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEC82473FBA9006BA130 /* InputWithDualMessageDialog.xib */; };
+		CED4FF372473FBA9006BA130 /* RSAActivityCardWrapper.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEC92473FBA9006BA130 /* RSAActivityCardWrapper.xib */; };
+		CED4FF382473FBA9006BA130 /* FeatureAdvertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FECA2473FBA9006BA130 /* FeatureAdvertView.xib */; };
+		CED4FF392473FBA9006BA130 /* TopSearchBarComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FECB2473FBA9006BA130 /* TopSearchBarComponent.xib */; };
+		CED4FF3A2473FBA9006BA130 /* DualFieldGroupHolder.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FECC2473FBA9006BA130 /* DualFieldGroupHolder.xib */; };
+		CED4FF3B2473FBA9006BA130 /* CreditCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FECD2473FBA9006BA130 /* CreditCardView.xib */; };
+		CED4FF3C2473FBA9006BA130 /* CollapsibleFormGroup.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FECE2473FBA9006BA130 /* CollapsibleFormGroup.xib */; };
+		CED4FF3D2473FBA9006BA130 /* ButtomActionButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FECF2473FBA9006BA130 /* ButtomActionButton.xib */; };
+		CED4FF3E2473FBA9006BA130 /* TwoFactorAuthenticator.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FED02473FBA9006BA130 /* TwoFactorAuthenticator.xib */; };
+		CED4FF3F2473FBA9006BA130 /* AmountEntryFieldWrapper.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FED12473FBA9006BA130 /* AmountEntryFieldWrapper.xib */; };
+		CED4FF402473FBA9006BA130 /* MovieItemMiniCardCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FED22473FBA9006BA130 /* MovieItemMiniCardCollectionCell.xib */; };
+		CED4FF412473FBA9006BA130 /* ExpenseManagerToolBarButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FED32473FBA9006BA130 /* ExpenseManagerToolBarButton.xib */; };
+		CED4FF422473FBA9006BA130 /* CardExpiryAndCVCInputGroup.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FED42473FBA9006BA130 /* CardExpiryAndCVCInputGroup.xib */; };
+		CED4FF432473FBA9006BA130 /* MiniCardWithDateAndImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FED52473FBA9006BA130 /* MiniCardWithDateAndImage.xib */; };
+		CED4FF442473FBA9006BA130 /* MovieItemMiniCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FED62473FBA9006BA130 /* MovieItemMiniCard.xib */; };
+		CED4FF452473FBA9006BA130 /* PagerSceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FED72473FBA9006BA130 /* PagerSceneView.xib */; };
+		CED4FF462473FBA9006BA130 /* AccountExpenseChip.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FED82473FBA9006BA130 /* AccountExpenseChip.xib */; };
+		CED4FF472473FBA9006BA130 /* LoanTopupSliderWrapper.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FED92473FBA9006BA130 /* LoanTopupSliderWrapper.xib */; };
+		CED4FF482473FBA9006BA130 /* MiniCardWithDateAndImageCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEDA2473FBA9006BA130 /* MiniCardWithDateAndImageCollectionView.xib */; };
+		CED4FF492473FBA9006BA130 /* NumberedSegmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEDB2473FBA9006BA130 /* NumberedSegmentView.xib */; };
+		CED4FF4A2473FBA9006BA130 /* InternationalTransferSummary.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEDD2473FBA9006BA130 /* InternationalTransferSummary.xib */; };
+		CED4FF4B2473FBA9006BA130 /* SavingsPlanSummaryListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEDE2473FBA9006BA130 /* SavingsPlanSummaryListItem.xib */; };
+		CED4FF4C2473FBA9006BA130 /* DaysCounter.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEDF2473FBA9006BA130 /* DaysCounter.xib */; };
+		CED4FF4D2473FBA9006BA130 /* FixedDepositFormSummary.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEE02473FBA9006BA130 /* FixedDepositFormSummary.xib */; };
+		CED4FF4E2473FBA9006BA130 /* FixedDepositMaturitySummary.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEE12473FBA9006BA130 /* FixedDepositMaturitySummary.xib */; };
+		CED4FF4F2473FBA9006BA130 /* FixedDepositSummary.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEE22473FBA9006BA130 /* FixedDepositSummary.xib */; };
+		CED4FF502473FBA9006BA130 /* DashboardFlyierView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEE42473FBA9006BA130 /* DashboardFlyierView.xib */; };
+		CED4FF512473FBA9006BA130 /* DashboardUpcomingPayment.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEE52473FBA9006BA130 /* DashboardUpcomingPayment.xib */; };
+		CED4FF522473FBA9006BA130 /* DashboardFlyerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEE72473FBA9006BA130 /* DashboardFlyerTableCell.xib */; };
+		CED4FF532473FBA9006BA130 /* DashboardAdvertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEE82473FBA9006BA130 /* DashboardAdvertTableViewCell.xib */; };
+		CED4FF542473FBA9006BA130 /* DashboardAccountListSceneTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEE92473FBA9006BA130 /* DashboardAccountListSceneTableCell.xib */; };
+		CED4FF552473FBA9006BA130 /* DashboardEventTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEEA2473FBA9006BA130 /* DashboardEventTableCell.xib */; };
+		CED4FF562473FBA9006BA130 /* DashboardLineHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEEB2473FBA9006BA130 /* DashboardLineHeader.xib */; };
+		CED4FF572473FBA9006BA130 /* DashboardShareTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEEC2473FBA9006BA130 /* DashboardShareTableViewCell.xib */; };
+		CED4FF602473FBA9006BA130 /* DashboardUpcomingPaymentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEF62473FBA9006BA130 /* DashboardUpcomingPaymentTableCell.xib */; };
+		CED4FF612473FBA9006BA130 /* DashboardMoviesTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEF72473FBA9006BA130 /* DashboardMoviesTableCell.xib */; };
+		CED4FF642473FBA9006BA130 /* TransactionPinSetup.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEFC2473FBA9006BA130 /* TransactionPinSetup.xib */; };
+		CED4FF652473FBA9006BA130 /* ChangePasswordSetup.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FEFD2473FBA9006BA130 /* ChangePasswordSetup.xib */; };
+		CED4FF682473FBA9006BA130 /* DashboardShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF012473FBA9006BA130 /* DashboardShareView.xib */; };
+		CED4FF6C2473FBA9006BA130 /* PickerComponentsSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF062473FBA9006BA130 /* PickerComponentsSelector.xib */; };
+		CED4FF6D2473FBA9006BA130 /* EmptyCreditCardAdder.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF072473FBA9006BA130 /* EmptyCreditCardAdder.xib */; };
+		CED4FF6E2473FBA9006BA130 /* AccountPagerSceneRenderer.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF082473FBA9006BA130 /* AccountPagerSceneRenderer.xib */; };
+		CED4FF6F2473FBA9006BA130 /* RoundedIconButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF092473FBA9006BA130 /* RoundedIconButton.xib */; };
+		CED4FF702473FBA9006BA130 /* TextCardTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF0B2473FBA9006BA130 /* TextCardTableCell.xib */; };
+		CED4FF712473FBA9006BA130 /* DisputeResolutionItemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF0C2473FBA9006BA130 /* DisputeResolutionItemTableCell.xib */; };
+		CED4FF722473FBA9006BA130 /* AccountDetailsMiniCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF0D2473FBA9006BA130 /* AccountDetailsMiniCardTableViewCell.xib */; };
+		CED4FF732473FBA9006BA130 /* SettingsBeneficaryDetailsTableCellHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF0E2473FBA9006BA130 /* SettingsBeneficaryDetailsTableCellHeader.xib */; };
+		CED4FF742473FBA9006BA130 /* SettingsBeneficaryTableCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF0F2473FBA9006BA130 /* SettingsBeneficaryTableCellTableViewCell.xib */; };
+		CED4FF752473FBA9006BA130 /* FixedDepositSummaryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF102473FBA9006BA130 /* FixedDepositSummaryTableCell.xib */; };
+		CED4FF762473FBA9006BA130 /* SettingsBeneficaryDetailsTableCellItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF112473FBA9006BA130 /* SettingsBeneficaryDetailsTableCellItem.xib */; };
+		CED4FF772473FBA9006BA130 /* TransferScheduleTableCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF122473FBA9006BA130 /* TransferScheduleTableCellTableViewCell.xib */; };
+		CED4FF782473FBA9006BA130 /* SavingsPlanTableCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF132473FBA9006BA130 /* SavingsPlanTableCellTableViewCell.xib */; };
+		CED4FF792473FBA9006BA130 /* UIBarButtonItemsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF142473FBA9006BA130 /* UIBarButtonItemsTableCell.xib */; };
+		CED4FF7A2473FBA9006BA130 /* FinancialManagerCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF152473FBA9006BA130 /* FinancialManagerCategoryTableViewCell.xib */; };
+		CED4FF7B2473FBA9006BA130 /* TransactionTableViewCellStyleOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF162473FBA9006BA130 /* TransactionTableViewCellStyleOne.xib */; };
+		CED4FF7C2473FBA9006BA130 /* BusinessAccountSignatoryItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF172473FBA9006BA130 /* BusinessAccountSignatoryItemTableViewCell.xib */; };
+		CED4FF7D2473FBA9006BA130 /* FinancialManagerPieTableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF182473FBA9006BA130 /* FinancialManagerPieTableTableViewCell.xib */; };
+		CED4FF7E2473FBA9006BA130 /* InternationalTransferSummaryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF192473FBA9006BA130 /* InternationalTransferSummaryTableCell.xib */; };
+		CED4FF7F2473FBA9006BA130 /* FileUploadTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF1A2473FBA9006BA130 /* FileUploadTableCell.xib */; };
+		CED4FF802473FBA9006BA130 /* AmountDisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF1B2473FBA9006BA130 /* AmountDisplayView.xib */; };
+		CED4FF812473FBA9006BA130 /* BillsPaymentRowHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF1C2473FBA9006BA130 /* BillsPaymentRowHeader.xib */; };
+		CED4FF822473FBA9006BA130 /* InteractableCreditCardBackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF1D2473FBA9006BA130 /* InteractableCreditCardBackView.xib */; };
+		CED4FF832473FBA9006BA130 /* LoadTopupDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF1E2473FBA9006BA130 /* LoadTopupDetailsView.xib */; };
+		CED4FF842473FBA9006BA130 /* AccountDetailsMiniCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF1F2473FBA9006BA130 /* AccountDetailsMiniCard.xib */; };
+		CED4FF852473FBA9006BA130 /* LoginTypeSwitcherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF202473FBA9006BA130 /* LoginTypeSwitcherView.xib */; };
+		CED4FF862473FBA9006BA130 /* FileUploaderUIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF212473FBA9006BA130 /* FileUploaderUIView.xib */; };
+		CED4FF872473FBA9006BA130 /* InputFieldGroup.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF222473FBA9006BA130 /* InputFieldGroup.xib */; };
+		CED4FF882473FBA9006BA130 /* ExpenseManagerToolPersonIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF232473FBA9006BA130 /* ExpenseManagerToolPersonIcon.xib */; };
+		CED4FF892473FBA9006BA130 /* ForgeinTransferCharges.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF242473FBA9006BA130 /* ForgeinTransferCharges.xib */; };
+		CED4FF8A2473FBA9006BA130 /* InnerFormItemControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF252473FBA9006BA130 /* InnerFormItemControl.xib */; };
+		CED4FF8B2473FBA9006BA130 /* MyOwn.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF262473FBA9006BA130 /* MyOwn.xib */; };
+		CED4FF8C2473FBA9006BA130 /* PopupTableItemsListDisplaySelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF272473FBA9006BA130 /* PopupTableItemsListDisplaySelector.xib */; };
+		CED4FF8D2473FBA9006BA130 /* BulkTransferBeneficary.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF282473FBA9006BA130 /* BulkTransferBeneficary.xib */; };
+		CED4FF8E2473FBA9006BA130 /* NumberCounter.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF292473FBA9006BA130 /* NumberCounter.xib */; };
+		CED4FF8F2473FBA9006BA130 /* NoTransactionsDefaultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF2A2473FBA9006BA130 /* NoTransactionsDefaultView.xib */; };
+		CED4FF902473FBA9006BA130 /* BrandSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF2B2473FBA9006BA130 /* BrandSlider.xib */; };
+		CED4FF912473FBA9006BA130 /* EventDetailsCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED4FF2C2473FBA9006BA130 /* EventDetailsCard.xib */; };
+		CED4FF942473FD9E006BA130 /* ContextMenuProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FF932473FD9E006BA130 /* ContextMenuProvider.swift */; };
+		CED4FF962473FE41006BA130 /* InputFieldGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FF952473FE41006BA130 /* InputFieldGroup.swift */; };
+		CED4FF982473FED8006BA130 /* BaseXNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FF972473FED8006BA130 /* BaseXNib.swift */; };
+		CED4FF9A2473FF2E006BA130 /* InputFieldGroup+ThousandSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FF992473FF2E006BA130 /* InputFieldGroup+ThousandSeparator.swift */; };
+		CED4FF9C247400C7006BA130 /* InputFieldGroupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FF9B247400C7006BA130 /* InputFieldGroupFormController.swift */; };
+		CED4FF9E247405A2006BA130 /* UIToolBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FF9D247405A2006BA130 /* UIToolBarExtension.swift */; };
+		CED4FFB724740603006BA130 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFA024740602006BA130 /* Montserrat-LightItalic.ttf */; };
+		CED4FFB824740603006BA130 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFA124740602006BA130 /* Montserrat-Medium.ttf */; };
+		CED4FFB924740603006BA130 /* fcmb-iconset-v3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFA224740602006BA130 /* fcmb-iconset-v3.ttf */; };
+		CED4FFBA24740603006BA130 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFA324740602006BA130 /* Montserrat-BoldItalic.ttf */; };
+		CED4FFBB24740603006BA130 /* fcmb-iconset-v2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFA424740602006BA130 /* fcmb-iconset-v2.ttf */; };
+		CED4FFBC24740603006BA130 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFA524740602006BA130 /* Montserrat-Light.ttf */; };
+		CED4FFBD24740603006BA130 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFA624740602006BA130 /* Montserrat-ThinItalic.ttf */; };
+		CED4FFBE24740603006BA130 /* fcmb-iconset-v1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFA724740602006BA130 /* fcmb-iconset-v1.ttf */; };
+		CED4FFBF24740603006BA130 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFA824740602006BA130 /* Montserrat-ExtraLight.ttf */; };
+		CED4FFC024740603006BA130 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFA924740602006BA130 /* Montserrat-Thin.ttf */; };
+		CED4FFC124740603006BA130 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFAA24740602006BA130 /* Montserrat-Bold.ttf */; };
+		CED4FFC224740603006BA130 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFAB24740602006BA130 /* Montserrat-MediumItalic.ttf */; };
+		CED4FFC324740603006BA130 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFAC24740602006BA130 /* Montserrat-BlackItalic.ttf */; };
+		CED4FFC424740603006BA130 /* OCR A Std Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFAD24740602006BA130 /* OCR A Std Regular.ttf */; };
+		CED4FFC524740603006BA130 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFAE24740602006BA130 /* Montserrat-SemiBold.ttf */; };
+		CED4FFC624740603006BA130 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFAF24740602006BA130 /* Montserrat-ExtraLightItalic.ttf */; };
+		CED4FFC724740603006BA130 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFB024740602006BA130 /* Montserrat-ExtraBold.ttf */; };
+		CED4FFC824740603006BA130 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFB124740602006BA130 /* Montserrat-Black.ttf */; };
+		CED4FFC924740603006BA130 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFB224740602006BA130 /* Montserrat-Regular.ttf */; };
+		CED4FFCA24740603006BA130 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFB324740602006BA130 /* Montserrat-Italic.ttf */; };
+		CED4FFCB24740603006BA130 /* fcmb-iconset.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFB424740603006BA130 /* fcmb-iconset.ttf */; };
+		CED4FFCC24740603006BA130 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFB524740603006BA130 /* Montserrat-SemiBoldItalic.ttf */; };
+		CED4FFCD24740603006BA130 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED4FFB624740603006BA130 /* Montserrat-ExtraBoldItalic.ttf */; };
+		CED4FFD024741514006BA130 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FFCF24741514006BA130 /* Network.swift */; };
+		CED4FFD224741651006BA130 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FFD124741651006BA130 /* Post.swift */; };
+		CED4FFD42474212E006BA130 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4FFD32474212D006BA130 /* PostCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		266E92BF52F2752B81465D0D /* Pods-CustomLoginDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomLoginDemo.release.xcconfig"; path = "Target Support Files/Pods-CustomLoginDemo/Pods-CustomLoginDemo.release.xcconfig"; sourceTree = "<group>"; };
+		830C3D8E22E7523E001FA4E7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		830C3D9122E755F6001FA4E7 /* loginbg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginbg.mp4; sourceTree = "<group>"; };
+		8314D42F22E644CC001D044A /* CustomLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomLoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8314D43222E644CC001D044A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8314D43422E644CC001D044A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8314D43622E644CC001D044A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8314D43922E644CC001D044A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8314D43B22E644CD001D044A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8314D43E22E644CD001D044A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8314D44022E644CD001D044A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8314D44622E64515001D044A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8314D44822E64520001D044A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8314D44A22E6452C001D044A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8397D20D22E64A7500CB78DD /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		ACB20647BFB76A962B3E918B /* Pods-CustomLoginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomLoginDemo.debug.xcconfig"; path = "Target Support Files/Pods-CustomLoginDemo/Pods-CustomLoginDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CED400172475592B006BA130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CED4001924756853006BA130 /* SiginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiginViewModel.swift; sourceTree = "<group>"; };
+		CED4FE272473A984006BA130 /* BaseViewModelPopulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModelPopulator.swift; sourceTree = "<group>"; };
+		CED4FE2A2473A9E6006BA130 /* DynamicFormTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicFormTableViewModel.swift; sourceTree = "<group>"; };
+		CED4FE2B2473A9E6006BA130 /* DynamicFormViewDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicFormViewDatasource.swift; sourceTree = "<group>"; };
+		CED4FE2C2473A9E6006BA130 /* DynamicFormSectionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicFormSectionData.swift; sourceTree = "<group>"; };
+		CED4FE2D2473A9E6006BA130 /* DynamicFormSectionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicFormSectionRow.swift; sourceTree = "<group>"; };
+		CED4FE362473AA8D006BA130 /* RadioButtonGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButtonGroup.swift; sourceTree = "<group>"; };
+		CED4FE372473AA8D006BA130 /* IconButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		CED4FE382473AA8D006BA130 /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		CED4FE392473AA8D006BA130 /* ButtomActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtomActionButton.swift; sourceTree = "<group>"; };
+		CED4FE422473AB05006BA130 /* PinEntryPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinEntryPoint.swift; sourceTree = "<group>"; };
+		CED4FE432473AB05006BA130 /* BrandLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandLabel.swift; sourceTree = "<group>"; };
+		CED4FE442473AB05006BA130 /* CaptionLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptionLabel.swift; sourceTree = "<group>"; };
+		CED4FE452473AB05006BA130 /* LabelWithKeyboardGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelWithKeyboardGesture.swift; sourceTree = "<group>"; };
+		CED4FE462473AB05006BA130 /* RoundedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedLabel.swift; sourceTree = "<group>"; };
+		CED4FE472473AB05006BA130 /* IconTextLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconTextLabel.swift; sourceTree = "<group>"; };
+		CED4FE4F2473AB82006BA130 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		CED4FE512473AC05006BA130 /* StringResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringResource.swift; sourceTree = "<group>"; };
+		CED4FE532473ACC1006BA130 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		CED4FE552473AD67006BA130 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		CED4FE572473ADCD006BA130 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		CED4FE612473B1D5006BA130 /* RadioListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioListTable.swift; sourceTree = "<group>"; };
+		CED4FE632473B21E006BA130 /* SubTitleTableCellWithRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleTableCellWithRadioButton.swift; sourceTree = "<group>"; };
+		CED4FE652473B25F006BA130 /* TableCellWithRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellWithRadioButton.swift; sourceTree = "<group>"; };
+		CED4FE672473B2AC006BA130 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		CED4FE6C2473B4B7006BA130 /* FormValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidators.swift; sourceTree = "<group>"; };
+		CED4FE6E2473B53E006BA130 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		CED4FE702473B78D006BA130 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		CED4FE722473B88A006BA130 /* ActivityIndicatorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorExtension.swift; sourceTree = "<group>"; };
+		CED4FE752473B99E006BA130 /* DynamicSimpleInputGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicSimpleInputGroupViewModel.swift; sourceTree = "<group>"; };
+		CED4FE772473B9FE006BA130 /* DynamicFormDateTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFormDateTimeViewModel.swift; sourceTree = "<group>"; };
+		CED4FE7A2473BA5D006BA130 /* DatePickerInputGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerInputGroup.swift; sourceTree = "<group>"; };
+		CED4FE7C2473BB36006BA130 /* RecurringFieldsPopulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringFieldsPopulator.swift; sourceTree = "<group>"; };
+		CED4FE7E2473BC47006BA130 /* DynamicFormSegmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFormSegmentViewModel.swift; sourceTree = "<group>"; };
+		CED4FE822473BD98006BA130 /* DynamicFormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFormTableViewCell.swift; sourceTree = "<group>"; };
+		CED4FE862473BF06006BA130 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		CED4FE8A2473C580006BA130 /* SigUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigUpViewModel.swift; sourceTree = "<group>"; };
+		CED4FE8D2473C79B006BA130 /* ValidateSignUpProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSignUpProfileRequest.swift; sourceTree = "<group>"; };
+		CED4FE8F2473C7E4006BA130 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		CED4FE912473CB77006BA130 /* DynamicFormTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFormTable.swift; sourceTree = "<group>"; };
+		CED4FE932473CDC7006BA130 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CED4FE952473CE26006BA130 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		CED4FE972473CEBF006BA130 /* ToastPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastPresenter.swift; sourceTree = "<group>"; };
+		CED4FE9A2473CF26006BA130 /* NetErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetErrorResponse.swift; sourceTree = "<group>"; };
+		CED4FE9C2473CFAF006BA130 /* StatusMessagesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMessagesPresenter.swift; sourceTree = "<group>"; };
+		CED4FE9F2473D102006BA130 /* BottomSheetConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetConfig.swift; sourceTree = "<group>"; };
+		CED4FEA22473D18C006BA130 /* SimpleMessageWithHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMessageWithHeader.swift; sourceTree = "<group>"; };
+		CED4FEA52473D270006BA130 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		CED4FEA72473D31E006BA130 /* RoundedIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedIconButton.swift; sourceTree = "<group>"; };
+		CED4FEA92473DCF9006BA130 /* UIResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponder.swift; sourceTree = "<group>"; };
+		CED4FEAD2473E339006BA130 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		CED4FEAF2473E919006BA130 /* GlobalControllerStoryID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalControllerStoryID.swift; sourceTree = "<group>"; };
+		CED4FEBF2473FBA8006BA130 /* InteractableCreditCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InteractableCreditCardView.xib; sourceTree = "<group>"; };
+		CED4FEC02473FBA8006BA130 /* CollapsibleFormGroupItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollapsibleFormGroupItem.xib; sourceTree = "<group>"; };
+		CED4FEC12473FBA8006BA130 /* BranchInputGroupSelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BranchInputGroupSelector.xib; sourceTree = "<group>"; };
+		CED4FEC22473FBA8006BA130 /* ConfirmPopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmPopupView.xib; sourceTree = "<group>"; };
+		CED4FEC32473FBA8006BA130 /* BillsPaymentPreviewDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BillsPaymentPreviewDetails.xib; sourceTree = "<group>"; };
+		CED4FEC42473FBA9006BA130 /* RIBUserFlowScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RIBUserFlowScreen.xib; sourceTree = "<group>"; };
+		CED4FEC52473FBA9006BA130 /* BeneficaryHeaderTitle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeneficaryHeaderTitle.xib; sourceTree = "<group>"; };
+		CED4FEC62473FBA9006BA130 /* QRCodeAmountDisplayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeAmountDisplayView.xib; sourceTree = "<group>"; };
+		CED4FEC72473FBA9006BA130 /* BulkTransactionSummaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BulkTransactionSummaryView.xib; sourceTree = "<group>"; };
+		CED4FEC82473FBA9006BA130 /* InputWithDualMessageDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputWithDualMessageDialog.xib; sourceTree = "<group>"; };
+		CED4FEC92473FBA9006BA130 /* RSAActivityCardWrapper.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSAActivityCardWrapper.xib; sourceTree = "<group>"; };
+		CED4FECA2473FBA9006BA130 /* FeatureAdvertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeatureAdvertView.xib; sourceTree = "<group>"; };
+		CED4FECB2473FBA9006BA130 /* TopSearchBarComponent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopSearchBarComponent.xib; sourceTree = "<group>"; };
+		CED4FECC2473FBA9006BA130 /* DualFieldGroupHolder.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DualFieldGroupHolder.xib; sourceTree = "<group>"; };
+		CED4FECD2473FBA9006BA130 /* CreditCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditCardView.xib; sourceTree = "<group>"; };
+		CED4FECE2473FBA9006BA130 /* CollapsibleFormGroup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollapsibleFormGroup.xib; sourceTree = "<group>"; };
+		CED4FECF2473FBA9006BA130 /* ButtomActionButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtomActionButton.xib; sourceTree = "<group>"; };
+		CED4FED02473FBA9006BA130 /* TwoFactorAuthenticator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoFactorAuthenticator.xib; sourceTree = "<group>"; };
+		CED4FED12473FBA9006BA130 /* AmountEntryFieldWrapper.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmountEntryFieldWrapper.xib; sourceTree = "<group>"; };
+		CED4FED22473FBA9006BA130 /* MovieItemMiniCardCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieItemMiniCardCollectionCell.xib; sourceTree = "<group>"; };
+		CED4FED32473FBA9006BA130 /* ExpenseManagerToolBarButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpenseManagerToolBarButton.xib; sourceTree = "<group>"; };
+		CED4FED42473FBA9006BA130 /* CardExpiryAndCVCInputGroup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardExpiryAndCVCInputGroup.xib; sourceTree = "<group>"; };
+		CED4FED52473FBA9006BA130 /* MiniCardWithDateAndImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MiniCardWithDateAndImage.xib; sourceTree = "<group>"; };
+		CED4FED62473FBA9006BA130 /* MovieItemMiniCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieItemMiniCard.xib; sourceTree = "<group>"; };
+		CED4FED72473FBA9006BA130 /* PagerSceneView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PagerSceneView.xib; sourceTree = "<group>"; };
+		CED4FED82473FBA9006BA130 /* AccountExpenseChip.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountExpenseChip.xib; sourceTree = "<group>"; };
+		CED4FED92473FBA9006BA130 /* LoanTopupSliderWrapper.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoanTopupSliderWrapper.xib; sourceTree = "<group>"; };
+		CED4FEDA2473FBA9006BA130 /* MiniCardWithDateAndImageCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MiniCardWithDateAndImageCollectionView.xib; sourceTree = "<group>"; };
+		CED4FEDB2473FBA9006BA130 /* NumberedSegmentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberedSegmentView.xib; sourceTree = "<group>"; };
+		CED4FEDD2473FBA9006BA130 /* InternationalTransferSummary.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InternationalTransferSummary.xib; sourceTree = "<group>"; };
+		CED4FEDE2473FBA9006BA130 /* SavingsPlanSummaryListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavingsPlanSummaryListItem.xib; sourceTree = "<group>"; };
+		CED4FEDF2473FBA9006BA130 /* DaysCounter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DaysCounter.xib; sourceTree = "<group>"; };
+		CED4FEE02473FBA9006BA130 /* FixedDepositFormSummary.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FixedDepositFormSummary.xib; sourceTree = "<group>"; };
+		CED4FEE12473FBA9006BA130 /* FixedDepositMaturitySummary.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FixedDepositMaturitySummary.xib; sourceTree = "<group>"; };
+		CED4FEE22473FBA9006BA130 /* FixedDepositSummary.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FixedDepositSummary.xib; sourceTree = "<group>"; };
+		CED4FEE42473FBA9006BA130 /* DashboardFlyierView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardFlyierView.xib; sourceTree = "<group>"; };
+		CED4FEE52473FBA9006BA130 /* DashboardUpcomingPayment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardUpcomingPayment.xib; sourceTree = "<group>"; };
+		CED4FEE72473FBA9006BA130 /* DashboardFlyerTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardFlyerTableCell.xib; sourceTree = "<group>"; };
+		CED4FEE82473FBA9006BA130 /* DashboardAdvertTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardAdvertTableViewCell.xib; sourceTree = "<group>"; };
+		CED4FEE92473FBA9006BA130 /* DashboardAccountListSceneTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardAccountListSceneTableCell.xib; sourceTree = "<group>"; };
+		CED4FEEA2473FBA9006BA130 /* DashboardEventTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardEventTableCell.xib; sourceTree = "<group>"; };
+		CED4FEEB2473FBA9006BA130 /* DashboardLineHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardLineHeader.xib; sourceTree = "<group>"; };
+		CED4FEEC2473FBA9006BA130 /* DashboardShareTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardShareTableViewCell.xib; sourceTree = "<group>"; };
+		CED4FEF62473FBA9006BA130 /* DashboardUpcomingPaymentTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardUpcomingPaymentTableCell.xib; sourceTree = "<group>"; };
+		CED4FEF72473FBA9006BA130 /* DashboardMoviesTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardMoviesTableCell.xib; sourceTree = "<group>"; };
+		CED4FEFC2473FBA9006BA130 /* TransactionPinSetup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionPinSetup.xib; sourceTree = "<group>"; };
+		CED4FEFD2473FBA9006BA130 /* ChangePasswordSetup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePasswordSetup.xib; sourceTree = "<group>"; };
+		CED4FF012473FBA9006BA130 /* DashboardShareView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardShareView.xib; sourceTree = "<group>"; };
+		CED4FF062473FBA9006BA130 /* PickerComponentsSelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerComponentsSelector.xib; sourceTree = "<group>"; };
+		CED4FF072473FBA9006BA130 /* EmptyCreditCardAdder.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyCreditCardAdder.xib; sourceTree = "<group>"; };
+		CED4FF082473FBA9006BA130 /* AccountPagerSceneRenderer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountPagerSceneRenderer.xib; sourceTree = "<group>"; };
+		CED4FF092473FBA9006BA130 /* RoundedIconButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoundedIconButton.xib; sourceTree = "<group>"; };
+		CED4FF0B2473FBA9006BA130 /* TextCardTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextCardTableCell.xib; sourceTree = "<group>"; };
+		CED4FF0C2473FBA9006BA130 /* DisputeResolutionItemTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisputeResolutionItemTableCell.xib; sourceTree = "<group>"; };
+		CED4FF0D2473FBA9006BA130 /* AccountDetailsMiniCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountDetailsMiniCardTableViewCell.xib; sourceTree = "<group>"; };
+		CED4FF0E2473FBA9006BA130 /* SettingsBeneficaryDetailsTableCellHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsBeneficaryDetailsTableCellHeader.xib; sourceTree = "<group>"; };
+		CED4FF0F2473FBA9006BA130 /* SettingsBeneficaryTableCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsBeneficaryTableCellTableViewCell.xib; sourceTree = "<group>"; };
+		CED4FF102473FBA9006BA130 /* FixedDepositSummaryTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FixedDepositSummaryTableCell.xib; sourceTree = "<group>"; };
+		CED4FF112473FBA9006BA130 /* SettingsBeneficaryDetailsTableCellItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsBeneficaryDetailsTableCellItem.xib; sourceTree = "<group>"; };
+		CED4FF122473FBA9006BA130 /* TransferScheduleTableCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransferScheduleTableCellTableViewCell.xib; sourceTree = "<group>"; };
+		CED4FF132473FBA9006BA130 /* SavingsPlanTableCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavingsPlanTableCellTableViewCell.xib; sourceTree = "<group>"; };
+		CED4FF142473FBA9006BA130 /* UIBarButtonItemsTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIBarButtonItemsTableCell.xib; sourceTree = "<group>"; };
+		CED4FF152473FBA9006BA130 /* FinancialManagerCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinancialManagerCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		CED4FF162473FBA9006BA130 /* TransactionTableViewCellStyleOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionTableViewCellStyleOne.xib; sourceTree = "<group>"; };
+		CED4FF172473FBA9006BA130 /* BusinessAccountSignatoryItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessAccountSignatoryItemTableViewCell.xib; sourceTree = "<group>"; };
+		CED4FF182473FBA9006BA130 /* FinancialManagerPieTableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinancialManagerPieTableTableViewCell.xib; sourceTree = "<group>"; };
+		CED4FF192473FBA9006BA130 /* InternationalTransferSummaryTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InternationalTransferSummaryTableCell.xib; sourceTree = "<group>"; };
+		CED4FF1A2473FBA9006BA130 /* FileUploadTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileUploadTableCell.xib; sourceTree = "<group>"; };
+		CED4FF1B2473FBA9006BA130 /* AmountDisplayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmountDisplayView.xib; sourceTree = "<group>"; };
+		CED4FF1C2473FBA9006BA130 /* BillsPaymentRowHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BillsPaymentRowHeader.xib; sourceTree = "<group>"; };
+		CED4FF1D2473FBA9006BA130 /* InteractableCreditCardBackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InteractableCreditCardBackView.xib; sourceTree = "<group>"; };
+		CED4FF1E2473FBA9006BA130 /* LoadTopupDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadTopupDetailsView.xib; sourceTree = "<group>"; };
+		CED4FF1F2473FBA9006BA130 /* AccountDetailsMiniCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountDetailsMiniCard.xib; sourceTree = "<group>"; };
+		CED4FF202473FBA9006BA130 /* LoginTypeSwitcherView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginTypeSwitcherView.xib; sourceTree = "<group>"; };
+		CED4FF212473FBA9006BA130 /* FileUploaderUIView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileUploaderUIView.xib; sourceTree = "<group>"; };
+		CED4FF222473FBA9006BA130 /* InputFieldGroup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputFieldGroup.xib; sourceTree = "<group>"; };
+		CED4FF232473FBA9006BA130 /* ExpenseManagerToolPersonIcon.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpenseManagerToolPersonIcon.xib; sourceTree = "<group>"; };
+		CED4FF242473FBA9006BA130 /* ForgeinTransferCharges.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgeinTransferCharges.xib; sourceTree = "<group>"; };
+		CED4FF252473FBA9006BA130 /* InnerFormItemControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InnerFormItemControl.xib; sourceTree = "<group>"; };
+		CED4FF262473FBA9006BA130 /* MyOwn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOwn.xib; sourceTree = "<group>"; };
+		CED4FF272473FBA9006BA130 /* PopupTableItemsListDisplaySelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupTableItemsListDisplaySelector.xib; sourceTree = "<group>"; };
+		CED4FF282473FBA9006BA130 /* BulkTransferBeneficary.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BulkTransferBeneficary.xib; sourceTree = "<group>"; };
+		CED4FF292473FBA9006BA130 /* NumberCounter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberCounter.xib; sourceTree = "<group>"; };
+		CED4FF2A2473FBA9006BA130 /* NoTransactionsDefaultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoTransactionsDefaultView.xib; sourceTree = "<group>"; };
+		CED4FF2B2473FBA9006BA130 /* BrandSlider.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrandSlider.xib; sourceTree = "<group>"; };
+		CED4FF2C2473FBA9006BA130 /* EventDetailsCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailsCard.xib; sourceTree = "<group>"; };
+		CED4FF932473FD9E006BA130 /* ContextMenuProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuProvider.swift; sourceTree = "<group>"; };
+		CED4FF952473FE41006BA130 /* InputFieldGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldGroup.swift; sourceTree = "<group>"; };
+		CED4FF972473FED8006BA130 /* BaseXNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseXNib.swift; sourceTree = "<group>"; };
+		CED4FF992473FF2E006BA130 /* InputFieldGroup+ThousandSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputFieldGroup+ThousandSeparator.swift"; sourceTree = "<group>"; };
+		CED4FF9B247400C7006BA130 /* InputFieldGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldGroupFormController.swift; sourceTree = "<group>"; };
+		CED4FF9D247405A2006BA130 /* UIToolBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIToolBarExtension.swift; sourceTree = "<group>"; };
+		CED4FFA024740602006BA130 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		CED4FFA124740602006BA130 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		CED4FFA224740602006BA130 /* fcmb-iconset-v3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fcmb-iconset-v3.ttf"; sourceTree = "<group>"; };
+		CED4FFA324740602006BA130 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CED4FFA424740602006BA130 /* fcmb-iconset-v2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fcmb-iconset-v2.ttf"; sourceTree = "<group>"; };
+		CED4FFA524740602006BA130 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		CED4FFA624740602006BA130 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		CED4FFA724740602006BA130 /* fcmb-iconset-v1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fcmb-iconset-v1.ttf"; sourceTree = "<group>"; };
+		CED4FFA824740602006BA130 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		CED4FFA924740602006BA130 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		CED4FFAA24740602006BA130 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		CED4FFAB24740602006BA130 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		CED4FFAC24740602006BA130 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		CED4FFAD24740602006BA130 /* OCR A Std Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OCR A Std Regular.ttf"; sourceTree = "<group>"; };
+		CED4FFAE24740602006BA130 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		CED4FFAF24740602006BA130 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		CED4FFB024740602006BA130 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		CED4FFB124740602006BA130 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		CED4FFB224740602006BA130 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		CED4FFB324740602006BA130 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		CED4FFB424740603006BA130 /* fcmb-iconset.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fcmb-iconset.ttf"; sourceTree = "<group>"; };
+		CED4FFB524740603006BA130 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		CED4FFB624740603006BA130 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		CED4FFCF24741514006BA130 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		CED4FFD124741651006BA130 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CED4FFD32474212D006BA130 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2FC198F18E7671BECD8869C /* Pods_CustomLoginDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomLoginDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8314D42C22E644CC001D044A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56B2D51462AFE4B0572F1644 /* Pods_CustomLoginDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		256061AB78805D7F9BD3C3ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACB20647BFB76A962B3E918B /* Pods-CustomLoginDemo.debug.xcconfig */,
+				266E92BF52F2752B81465D0D /* Pods-CustomLoginDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4BB4075EEC3AE105084101BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2FC198F18E7671BECD8869C /* Pods_CustomLoginDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		830C3D9022E755DB001FA4E7 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				830C3D9122E755F6001FA4E7 /* loginbg.mp4 */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		8314D42622E644CC001D044A = {
+			isa = PBXGroup;
+			children = (
+				8314D43122E644CC001D044A /* CustomLoginDemo */,
+				8314D43022E644CC001D044A /* Products */,
+				256061AB78805D7F9BD3C3ED /* Pods */,
+				4BB4075EEC3AE105084101BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8314D43022E644CC001D044A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8314D42F22E644CC001D044A /* CustomLoginDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8314D43122E644CC001D044A /* CustomLoginDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FFCE247414F9006BA130 /* network */,
+				CED4FF9F24740602006BA130 /* Fonts */,
+				CED4FF922473FD7C006BA130 /* componet-view */,
+				CED4FEBE2473FBA8006BA130 /* component-xib */,
+				CED4FEA42473D24E006BA130 /* view-controller */,
+				CED4FE9E2473D0C5006BA130 /* bottomBar */,
+				CED4FE992473CF17006BA130 /* Response */,
+				CED4FE8C2473C74C006BA130 /* Request */,
+				CED4FE792473BA44006BA130 /* inputgroups */,
+				CED4FE742473B989006BA130 /* viewmodel */,
+				CED4FE6B2473B4A5006BA130 /* Utilities */,
+				CED4FE602473B1C1006BA130 /* table */,
+				CED4FE4E2473AB6C006BA130 /* extentions */,
+				CED4FE412473AB05006BA130 /* labels */,
+				CED4FE322473AA8D006BA130 /* Buttons */,
+				CED4FE292473A9E6006BA130 /* DynamicForms */,
+				CED4FE262473A984006BA130 /* populators */,
+				8314D43222E644CC001D044A /* AppDelegate.swift */,
+				8314D43422E644CC001D044A /* SceneDelegate.swift */,
+				8397D20F22E64A7D00CB78DD /* Helpers */,
+				8314D44C22E64531001D044A /* onboarding */,
+				830C3D9022E755DB001FA4E7 /* Media */,
+				8314D43822E644CC001D044A /* Main.storyboard */,
+				8314D43B22E644CD001D044A /* Assets.xcassets */,
+				8314D43D22E644CD001D044A /* LaunchScreen.storyboard */,
+				CED400172475592B006BA130 /* GoogleService-Info.plist */,
+				8314D44022E644CD001D044A /* Info.plist */,
+				CED4FE512473AC05006BA130 /* StringResource.swift */,
+				CED4FE532473ACC1006BA130 /* Theme.swift */,
+				CED4FE552473AD67006BA130 /* UIColor.swift */,
+				CED4FE572473ADCD006BA130 /* Typography.swift */,
+				CED4FE9C2473CFAF006BA130 /* StatusMessagesPresenter.swift */,
+				CED4FEAF2473E919006BA130 /* GlobalControllerStoryID.swift */,
+				CED4FFD124741651006BA130 /* Post.swift */,
+			);
+			path = CustomLoginDemo;
+			sourceTree = "<group>";
+		};
+		8314D44C22E64531001D044A /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FE892473C554006BA130 /* viewmodel */,
+				CED4FE882473C528006BA130 /* viewcontroller */,
+				8314D43622E644CC001D044A /* ViewController.swift */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
+		8397D20F22E64A7D00CB78DD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8397D20D22E64A7500CB78DD /* Utilities.swift */,
+				830C3D8E22E7523E001FA4E7 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CED4FE262473A984006BA130 /* populators */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FE272473A984006BA130 /* BaseViewModelPopulator.swift */,
+			);
+			path = populators;
+			sourceTree = "<group>";
+		};
+		CED4FE292473A9E6006BA130 /* DynamicForms */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FE2A2473A9E6006BA130 /* DynamicFormTableViewModel.swift */,
+				CED4FE2B2473A9E6006BA130 /* DynamicFormViewDatasource.swift */,
+				CED4FE2C2473A9E6006BA130 /* DynamicFormSectionData.swift */,
+				CED4FE2D2473A9E6006BA130 /* DynamicFormSectionRow.swift */,
+			);
+			path = DynamicForms;
+			sourceTree = "<group>";
+		};
+		CED4FE322473AA8D006BA130 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FE362473AA8D006BA130 /* RadioButtonGroup.swift */,
+				CED4FE372473AA8D006BA130 /* IconButton.swift */,
+				CED4FE382473AA8D006BA130 /* RadioButton.swift */,
+				CED4FE392473AA8D006BA130 /* ButtomActionButton.swift */,
+				CED4FEA72473D31E006BA130 /* RoundedIconButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		CED4FE412473AB05006BA130 /* labels */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FE422473AB05006BA130 /* PinEntryPoint.swift */,
+				CED4FE432473AB05006BA130 /* BrandLabel.swift */,
+				CED4FE442473AB05006BA130 /* CaptionLabel.swift */,
+				CED4FE452473AB05006BA130 /* LabelWithKeyboardGesture.swift */,
+				CED4FE462473AB05006BA130 /* RoundedLabel.swift */,
+				CED4FE472473AB05006BA130 /* IconTextLabel.swift */,
+			);
+			path = labels;
+			sourceTree = "<group>";
+		};
+		CED4FE4E2473AB6C006BA130 /* extentions */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FE4F2473AB82006BA130 /* UILabelExtension.swift */,
+				CED4FE672473B2AC006BA130 /* UITableViewCellExtension.swift */,
+				CED4FE6E2473B53E006BA130 /* StringExtension.swift */,
+				CED4FE702473B78D006BA130 /* UIViewExtension.swift */,
+				CED4FE722473B88A006BA130 /* ActivityIndicatorExtension.swift */,
+				CED4FE862473BF06006BA130 /* UIButtonExtension.swift */,
+				CED4FE952473CE26006BA130 /* ViewControllerExtension.swift */,
+				CED4FE972473CEBF006BA130 /* ToastPresenter.swift */,
+				CED4FEA92473DCF9006BA130 /* UIResponder.swift */,
+				CED4FF9D247405A2006BA130 /* UIToolBarExtension.swift */,
+			);
+			path = extentions;
+			sourceTree = "<group>";
+		};
+		CED4FE602473B1C1006BA130 /* table */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FE612473B1D5006BA130 /* RadioListTable.swift */,
+				CED4FE632473B21E006BA130 /* SubTitleTableCellWithRadioButton.swift */,
+				CED4FE652473B25F006BA130 /* TableCellWithRadioButton.swift */,
+				CED4FE822473BD98006BA130 /* DynamicFormTableViewCell.swift */,
+				CED4FE912473CB77006BA130 /* DynamicFormTable.swift */,
+			);
+			path = table;
+			sourceTree = "<group>";
+		};
+		CED4FE6B2473B4A5006BA130 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FE6C2473B4B7006BA130 /* FormValidators.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CED4FE742473B989006BA130 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FE752473B99E006BA130 /* DynamicSimpleInputGroupViewModel.swift */,
+				CED4FE772473B9FE006BA130 /* DynamicFormDateTimeViewModel.swift */,
+				CED4FE7C2473BB36006BA130 /* RecurringFieldsPopulator.swift */,
+				CED4FE7E2473BC47006BA130 /* DynamicFormSegmentViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		CED4FE792473BA44006BA130 /* inputgroups */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FE7A2473BA5D006BA130 /* DatePickerInputGroup.swift */,
+			);
+			path = inputgroups;
+			sourceTree = "<group>";
+		};
+		CED4FE882473C528006BA130 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				8314D44622E64515001D044A /* SignUpViewController.swift */,
+				8314D44822E64520001D044A /* LoginViewController.swift */,
+				8314D44A22E6452C001D044A /* HomeViewController.swift */,
+				CED4FE932473CDC7006BA130 /* BaseViewController.swift */,
+				CED4FFD32474212D006BA130 /* PostCollectionViewCell.swift */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		CED4FE892473C554006BA130 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FE8A2473C580006BA130 /* SigUpViewModel.swift */,
+				CED4001924756853006BA130 /* SiginViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		CED4FE8C2473C74C006BA130 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FE8D2473C79B006BA130 /* ValidateSignUpProfileRequest.swift */,
+				CED4FE8F2473C7E4006BA130 /* Networking.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		CED4FE992473CF17006BA130 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FE9A2473CF26006BA130 /* NetErrorResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		CED4FE9E2473D0C5006BA130 /* bottomBar */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FEA12473D154006BA130 /* control */,
+				CED4FE9F2473D102006BA130 /* BottomSheetConfig.swift */,
+			);
+			path = bottomBar;
+			sourceTree = "<group>";
+		};
+		CED4FEA12473D154006BA130 /* control */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FEA22473D18C006BA130 /* SimpleMessageWithHeader.swift */,
+			);
+			path = control;
+			sourceTree = "<group>";
+		};
+		CED4FEA42473D24E006BA130 /* view-controller */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FEA52473D270006BA130 /* BottomSheetViewController.swift */,
+				CED4FEAD2473E339006BA130 /* LoadingViewController.swift */,
+			);
+			path = "view-controller";
+			sourceTree = "<group>";
+		};
+		CED4FEBE2473FBA8006BA130 /* component-xib */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FEBF2473FBA8006BA130 /* InteractableCreditCardView.xib */,
+				CED4FEC02473FBA8006BA130 /* CollapsibleFormGroupItem.xib */,
+				CED4FEC12473FBA8006BA130 /* BranchInputGroupSelector.xib */,
+				CED4FEC22473FBA8006BA130 /* ConfirmPopupView.xib */,
+				CED4FEC32473FBA8006BA130 /* BillsPaymentPreviewDetails.xib */,
+				CED4FEC42473FBA9006BA130 /* RIBUserFlowScreen.xib */,
+				CED4FEC52473FBA9006BA130 /* BeneficaryHeaderTitle.xib */,
+				CED4FEC62473FBA9006BA130 /* QRCodeAmountDisplayView.xib */,
+				CED4FEC72473FBA9006BA130 /* BulkTransactionSummaryView.xib */,
+				CED4FEC82473FBA9006BA130 /* InputWithDualMessageDialog.xib */,
+				CED4FEC92473FBA9006BA130 /* RSAActivityCardWrapper.xib */,
+				CED4FECA2473FBA9006BA130 /* FeatureAdvertView.xib */,
+				CED4FECB2473FBA9006BA130 /* TopSearchBarComponent.xib */,
+				CED4FECC2473FBA9006BA130 /* DualFieldGroupHolder.xib */,
+				CED4FECD2473FBA9006BA130 /* CreditCardView.xib */,
+				CED4FECE2473FBA9006BA130 /* CollapsibleFormGroup.xib */,
+				CED4FECF2473FBA9006BA130 /* ButtomActionButton.xib */,
+				CED4FED02473FBA9006BA130 /* TwoFactorAuthenticator.xib */,
+				CED4FED12473FBA9006BA130 /* AmountEntryFieldWrapper.xib */,
+				CED4FED22473FBA9006BA130 /* MovieItemMiniCardCollectionCell.xib */,
+				CED4FED32473FBA9006BA130 /* ExpenseManagerToolBarButton.xib */,
+				CED4FED42473FBA9006BA130 /* CardExpiryAndCVCInputGroup.xib */,
+				CED4FED52473FBA9006BA130 /* MiniCardWithDateAndImage.xib */,
+				CED4FED62473FBA9006BA130 /* MovieItemMiniCard.xib */,
+				CED4FED72473FBA9006BA130 /* PagerSceneView.xib */,
+				CED4FED82473FBA9006BA130 /* AccountExpenseChip.xib */,
+				CED4FED92473FBA9006BA130 /* LoanTopupSliderWrapper.xib */,
+				CED4FEDA2473FBA9006BA130 /* MiniCardWithDateAndImageCollectionView.xib */,
+				CED4FEDB2473FBA9006BA130 /* NumberedSegmentView.xib */,
+				CED4FEDC2473FBA9006BA130 /* SubViews */,
+				CED4FEE32473FBA9006BA130 /* Dashboard */,
+				CED4FF062473FBA9006BA130 /* PickerComponentsSelector.xib */,
+				CED4FF072473FBA9006BA130 /* EmptyCreditCardAdder.xib */,
+				CED4FF082473FBA9006BA130 /* AccountPagerSceneRenderer.xib */,
+				CED4FF092473FBA9006BA130 /* RoundedIconButton.xib */,
+				CED4FF0A2473FBA9006BA130 /* table */,
+				CED4FF1B2473FBA9006BA130 /* AmountDisplayView.xib */,
+				CED4FF1C2473FBA9006BA130 /* BillsPaymentRowHeader.xib */,
+				CED4FF1D2473FBA9006BA130 /* InteractableCreditCardBackView.xib */,
+				CED4FF1E2473FBA9006BA130 /* LoadTopupDetailsView.xib */,
+				CED4FF1F2473FBA9006BA130 /* AccountDetailsMiniCard.xib */,
+				CED4FF202473FBA9006BA130 /* LoginTypeSwitcherView.xib */,
+				CED4FF212473FBA9006BA130 /* FileUploaderUIView.xib */,
+				CED4FF222473FBA9006BA130 /* InputFieldGroup.xib */,
+				CED4FF232473FBA9006BA130 /* ExpenseManagerToolPersonIcon.xib */,
+				CED4FF242473FBA9006BA130 /* ForgeinTransferCharges.xib */,
+				CED4FF252473FBA9006BA130 /* InnerFormItemControl.xib */,
+				CED4FF262473FBA9006BA130 /* MyOwn.xib */,
+				CED4FF272473FBA9006BA130 /* PopupTableItemsListDisplaySelector.xib */,
+				CED4FF282473FBA9006BA130 /* BulkTransferBeneficary.xib */,
+				CED4FF292473FBA9006BA130 /* NumberCounter.xib */,
+				CED4FF2A2473FBA9006BA130 /* NoTransactionsDefaultView.xib */,
+				CED4FF2B2473FBA9006BA130 /* BrandSlider.xib */,
+				CED4FF2C2473FBA9006BA130 /* EventDetailsCard.xib */,
+			);
+			path = "component-xib";
+			sourceTree = "<group>";
+		};
+		CED4FEDC2473FBA9006BA130 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FEDD2473FBA9006BA130 /* InternationalTransferSummary.xib */,
+				CED4FEDE2473FBA9006BA130 /* SavingsPlanSummaryListItem.xib */,
+				CED4FEDF2473FBA9006BA130 /* DaysCounter.xib */,
+				CED4FEE02473FBA9006BA130 /* FixedDepositFormSummary.xib */,
+				CED4FEE12473FBA9006BA130 /* FixedDepositMaturitySummary.xib */,
+				CED4FEE22473FBA9006BA130 /* FixedDepositSummary.xib */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		CED4FEE32473FBA9006BA130 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FEE42473FBA9006BA130 /* DashboardFlyierView.xib */,
+				CED4FEE52473FBA9006BA130 /* DashboardUpcomingPayment.xib */,
+				CED4FEE62473FBA9006BA130 /* TableCells */,
+				CED4FEF82473FBA9006BA130 /* Validators */,
+				CED4FF012473FBA9006BA130 /* DashboardShareView.xib */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		CED4FEE62473FBA9006BA130 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FEE72473FBA9006BA130 /* DashboardFlyerTableCell.xib */,
+				CED4FEE82473FBA9006BA130 /* DashboardAdvertTableViewCell.xib */,
+				CED4FEE92473FBA9006BA130 /* DashboardAccountListSceneTableCell.xib */,
+				CED4FEEA2473FBA9006BA130 /* DashboardEventTableCell.xib */,
+				CED4FEEB2473FBA9006BA130 /* DashboardLineHeader.xib */,
+				CED4FEEC2473FBA9006BA130 /* DashboardShareTableViewCell.xib */,
+				CED4FEF62473FBA9006BA130 /* DashboardUpcomingPaymentTableCell.xib */,
+				CED4FEF72473FBA9006BA130 /* DashboardMoviesTableCell.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		CED4FEF82473FBA9006BA130 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FEFC2473FBA9006BA130 /* TransactionPinSetup.xib */,
+				CED4FEFD2473FBA9006BA130 /* ChangePasswordSetup.xib */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		CED4FF0A2473FBA9006BA130 /* table */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FF0B2473FBA9006BA130 /* TextCardTableCell.xib */,
+				CED4FF0C2473FBA9006BA130 /* DisputeResolutionItemTableCell.xib */,
+				CED4FF0D2473FBA9006BA130 /* AccountDetailsMiniCardTableViewCell.xib */,
+				CED4FF0E2473FBA9006BA130 /* SettingsBeneficaryDetailsTableCellHeader.xib */,
+				CED4FF0F2473FBA9006BA130 /* SettingsBeneficaryTableCellTableViewCell.xib */,
+				CED4FF102473FBA9006BA130 /* FixedDepositSummaryTableCell.xib */,
+				CED4FF112473FBA9006BA130 /* SettingsBeneficaryDetailsTableCellItem.xib */,
+				CED4FF122473FBA9006BA130 /* TransferScheduleTableCellTableViewCell.xib */,
+				CED4FF132473FBA9006BA130 /* SavingsPlanTableCellTableViewCell.xib */,
+				CED4FF142473FBA9006BA130 /* UIBarButtonItemsTableCell.xib */,
+				CED4FF152473FBA9006BA130 /* FinancialManagerCategoryTableViewCell.xib */,
+				CED4FF162473FBA9006BA130 /* TransactionTableViewCellStyleOne.xib */,
+				CED4FF172473FBA9006BA130 /* BusinessAccountSignatoryItemTableViewCell.xib */,
+				CED4FF182473FBA9006BA130 /* FinancialManagerPieTableTableViewCell.xib */,
+				CED4FF192473FBA9006BA130 /* InternationalTransferSummaryTableCell.xib */,
+				CED4FF1A2473FBA9006BA130 /* FileUploadTableCell.xib */,
+			);
+			path = table;
+			sourceTree = "<group>";
+		};
+		CED4FF922473FD7C006BA130 /* componet-view */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FF932473FD9E006BA130 /* ContextMenuProvider.swift */,
+				CED4FF952473FE41006BA130 /* InputFieldGroup.swift */,
+				CED4FF972473FED8006BA130 /* BaseXNib.swift */,
+				CED4FF992473FF2E006BA130 /* InputFieldGroup+ThousandSeparator.swift */,
+				CED4FF9B247400C7006BA130 /* InputFieldGroupFormController.swift */,
+			);
+			path = "componet-view";
+			sourceTree = "<group>";
+		};
+		CED4FF9F24740602006BA130 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FFA024740602006BA130 /* Montserrat-LightItalic.ttf */,
+				CED4FFA124740602006BA130 /* Montserrat-Medium.ttf */,
+				CED4FFA224740602006BA130 /* fcmb-iconset-v3.ttf */,
+				CED4FFA324740602006BA130 /* Montserrat-BoldItalic.ttf */,
+				CED4FFA424740602006BA130 /* fcmb-iconset-v2.ttf */,
+				CED4FFA524740602006BA130 /* Montserrat-Light.ttf */,
+				CED4FFA624740602006BA130 /* Montserrat-ThinItalic.ttf */,
+				CED4FFA724740602006BA130 /* fcmb-iconset-v1.ttf */,
+				CED4FFA824740602006BA130 /* Montserrat-ExtraLight.ttf */,
+				CED4FFA924740602006BA130 /* Montserrat-Thin.ttf */,
+				CED4FFAA24740602006BA130 /* Montserrat-Bold.ttf */,
+				CED4FFAB24740602006BA130 /* Montserrat-MediumItalic.ttf */,
+				CED4FFAC24740602006BA130 /* Montserrat-BlackItalic.ttf */,
+				CED4FFAD24740602006BA130 /* OCR A Std Regular.ttf */,
+				CED4FFAE24740602006BA130 /* Montserrat-SemiBold.ttf */,
+				CED4FFAF24740602006BA130 /* Montserrat-ExtraLightItalic.ttf */,
+				CED4FFB024740602006BA130 /* Montserrat-ExtraBold.ttf */,
+				CED4FFB124740602006BA130 /* Montserrat-Black.ttf */,
+				CED4FFB224740602006BA130 /* Montserrat-Regular.ttf */,
+				CED4FFB324740602006BA130 /* Montserrat-Italic.ttf */,
+				CED4FFB424740603006BA130 /* fcmb-iconset.ttf */,
+				CED4FFB524740603006BA130 /* Montserrat-SemiBoldItalic.ttf */,
+				CED4FFB624740603006BA130 /* Montserrat-ExtraBoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CED4FFCE247414F9006BA130 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				CED4FFCF24741514006BA130 /* Network.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8314D42E22E644CC001D044A /* CustomLoginDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8314D44322E644CD001D044A /* Build configuration list for PBXNativeTarget "CustomLoginDemo" */;
+			buildPhases = (
+				96261C93D747DB12A9B86BBA /* [CP] Check Pods Manifest.lock */,
+				8314D42B22E644CC001D044A /* Sources */,
+				8314D42C22E644CC001D044A /* Frameworks */,
+				8314D42D22E644CC001D044A /* Resources */,
+				7D48E628917999722CE92F9E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomLoginDemo;
+			productName = CustomLoginDemo;
+			productReference = 8314D42F22E644CC001D044A /* CustomLoginDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8314D42722E644CC001D044A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Christopher Ching";
+				TargetAttributes = {
+					8314D42E22E644CC001D044A = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 8314D42A22E644CC001D044A /* Build configuration list for PBXProject "CustomLoginDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8314D42622E644CC001D044A;
+			productRefGroup = 8314D43022E644CC001D044A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8314D42E22E644CC001D044A /* CustomLoginDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8314D42D22E644CC001D044A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED4FF612473FBA9006BA130 /* DashboardMoviesTableCell.xib in Resources */,
+				CED4FF2E2473FBA9006BA130 /* CollapsibleFormGroupItem.xib in Resources */,
+				CED4FF482473FBA9006BA130 /* MiniCardWithDateAndImageCollectionView.xib in Resources */,
+				CED4FFCA24740603006BA130 /* Montserrat-Italic.ttf in Resources */,
+				CED4FF8E2473FBA9006BA130 /* NumberCounter.xib in Resources */,
+				CED4FF642473FBA9006BA130 /* TransactionPinSetup.xib in Resources */,
+				CED4FF462473FBA9006BA130 /* AccountExpenseChip.xib in Resources */,
+				CED4FF902473FBA9006BA130 /* BrandSlider.xib in Resources */,
+				CED4FFB924740603006BA130 /* fcmb-iconset-v3.ttf in Resources */,
+				CED4FF892473FBA9006BA130 /* ForgeinTransferCharges.xib in Resources */,
+				CED4FF2F2473FBA9006BA130 /* BranchInputGroupSelector.xib in Resources */,
+				CED400182475592B006BA130 /* GoogleService-Info.plist in Resources */,
+				8314D43F22E644CD001D044A /* LaunchScreen.storyboard in Resources */,
+				CED4FF6F2473FBA9006BA130 /* RoundedIconButton.xib in Resources */,
+				CED4FFC524740603006BA130 /* Montserrat-SemiBold.ttf in Resources */,
+				830C3D9222E755F6001FA4E7 /* loginbg.mp4 in Resources */,
+				CED4FFBA24740603006BA130 /* Montserrat-BoldItalic.ttf in Resources */,
+				CED4FF782473FBA9006BA130 /* SavingsPlanTableCellTableViewCell.xib in Resources */,
+				CED4FF7D2473FBA9006BA130 /* FinancialManagerPieTableTableViewCell.xib in Resources */,
+				CED4FF3D2473FBA9006BA130 /* ButtomActionButton.xib in Resources */,
+				CED4FFBE24740603006BA130 /* fcmb-iconset-v1.ttf in Resources */,
+				CED4FF7C2473FBA9006BA130 /* BusinessAccountSignatoryItemTableViewCell.xib in Resources */,
+				CED4FF352473FBA9006BA130 /* BulkTransactionSummaryView.xib in Resources */,
+				CED4FF812473FBA9006BA130 /* BillsPaymentRowHeader.xib in Resources */,
+				CED4FF652473FBA9006BA130 /* ChangePasswordSetup.xib in Resources */,
+				CED4FF492473FBA9006BA130 /* NumberedSegmentView.xib in Resources */,
+				CED4FF4C2473FBA9006BA130 /* DaysCounter.xib in Resources */,
+				CED4FFC724740603006BA130 /* Montserrat-ExtraBold.ttf in Resources */,
+				CED4FF822473FBA9006BA130 /* InteractableCreditCardBackView.xib in Resources */,
+				CED4FF792473FBA9006BA130 /* UIBarButtonItemsTableCell.xib in Resources */,
+				CED4FF322473FBA9006BA130 /* RIBUserFlowScreen.xib in Resources */,
+				CED4FF4D2473FBA9006BA130 /* FixedDepositFormSummary.xib in Resources */,
+				CED4FF7E2473FBA9006BA130 /* InternationalTransferSummaryTableCell.xib in Resources */,
+				CED4FF362473FBA9006BA130 /* InputWithDualMessageDialog.xib in Resources */,
+				CED4FF4F2473FBA9006BA130 /* FixedDepositSummary.xib in Resources */,
+				CED4FF912473FBA9006BA130 /* EventDetailsCard.xib in Resources */,
+				CED4FFC024740603006BA130 /* Montserrat-Thin.ttf in Resources */,
+				CED4FF4E2473FBA9006BA130 /* FixedDepositMaturitySummary.xib in Resources */,
+				CED4FF8F2473FBA9006BA130 /* NoTransactionsDefaultView.xib in Resources */,
+				CED4FFCD24740603006BA130 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				CED4FFCC24740603006BA130 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				CED4FFC224740603006BA130 /* Montserrat-MediumItalic.ttf in Resources */,
+				CED4FF382473FBA9006BA130 /* FeatureAdvertView.xib in Resources */,
+				CED4FF8A2473FBA9006BA130 /* InnerFormItemControl.xib in Resources */,
+				CED4FF3C2473FBA9006BA130 /* CollapsibleFormGroup.xib in Resources */,
+				CED4FF342473FBA9006BA130 /* QRCodeAmountDisplayView.xib in Resources */,
+				CED4FFB724740603006BA130 /* Montserrat-LightItalic.ttf in Resources */,
+				CED4FF512473FBA9006BA130 /* DashboardUpcomingPayment.xib in Resources */,
+				CED4FF372473FBA9006BA130 /* RSAActivityCardWrapper.xib in Resources */,
+				CED4FF742473FBA9006BA130 /* SettingsBeneficaryTableCellTableViewCell.xib in Resources */,
+				CED4FFC124740603006BA130 /* Montserrat-Bold.ttf in Resources */,
+				CED4FF842473FBA9006BA130 /* AccountDetailsMiniCard.xib in Resources */,
+				CED4FF392473FBA9006BA130 /* TopSearchBarComponent.xib in Resources */,
+				CED4FF3E2473FBA9006BA130 /* TwoFactorAuthenticator.xib in Resources */,
+				CED4FF3F2473FBA9006BA130 /* AmountEntryFieldWrapper.xib in Resources */,
+				CED4FF472473FBA9006BA130 /* LoanTopupSliderWrapper.xib in Resources */,
+				CED4FF722473FBA9006BA130 /* AccountDetailsMiniCardTableViewCell.xib in Resources */,
+				CED4FF832473FBA9006BA130 /* LoadTopupDetailsView.xib in Resources */,
+				CED4FF432473FBA9006BA130 /* MiniCardWithDateAndImage.xib in Resources */,
+				8314D43C22E644CD001D044A /* Assets.xcassets in Resources */,
+				CED4FF7A2473FBA9006BA130 /* FinancialManagerCategoryTableViewCell.xib in Resources */,
+				CED4FF762473FBA9006BA130 /* SettingsBeneficaryDetailsTableCellItem.xib in Resources */,
+				CED4FF862473FBA9006BA130 /* FileUploaderUIView.xib in Resources */,
+				CED4FF6C2473FBA9006BA130 /* PickerComponentsSelector.xib in Resources */,
+				CED4FF6E2473FBA9006BA130 /* AccountPagerSceneRenderer.xib in Resources */,
+				CED4FF522473FBA9006BA130 /* DashboardFlyerTableCell.xib in Resources */,
+				CED4FFC324740603006BA130 /* Montserrat-BlackItalic.ttf in Resources */,
+				CED4FF872473FBA9006BA130 /* InputFieldGroup.xib in Resources */,
+				CED4FF502473FBA9006BA130 /* DashboardFlyierView.xib in Resources */,
+				CED4FF4B2473FBA9006BA130 /* SavingsPlanSummaryListItem.xib in Resources */,
+				CED4FF572473FBA9006BA130 /* DashboardShareTableViewCell.xib in Resources */,
+				CED4FF302473FBA9006BA130 /* ConfirmPopupView.xib in Resources */,
+				CED4FFCB24740603006BA130 /* fcmb-iconset.ttf in Resources */,
+				CED4FFBB24740603006BA130 /* fcmb-iconset-v2.ttf in Resources */,
+				CED4FF422473FBA9006BA130 /* CardExpiryAndCVCInputGroup.xib in Resources */,
+				CED4FFBD24740603006BA130 /* Montserrat-ThinItalic.ttf in Resources */,
+				CED4FF442473FBA9006BA130 /* MovieItemMiniCard.xib in Resources */,
+				CED4FF452473FBA9006BA130 /* PagerSceneView.xib in Resources */,
+				CED4FF552473FBA9006BA130 /* DashboardEventTableCell.xib in Resources */,
+				CED4FFBF24740603006BA130 /* Montserrat-ExtraLight.ttf in Resources */,
+				CED4FF7B2473FBA9006BA130 /* TransactionTableViewCellStyleOne.xib in Resources */,
+				CED4FF412473FBA9006BA130 /* ExpenseManagerToolBarButton.xib in Resources */,
+				CED4FFC924740603006BA130 /* Montserrat-Regular.ttf in Resources */,
+				CED4FF4A2473FBA9006BA130 /* InternationalTransferSummary.xib in Resources */,
+				CED4FFB824740603006BA130 /* Montserrat-Medium.ttf in Resources */,
+				CED4FFC424740603006BA130 /* OCR A Std Regular.ttf in Resources */,
+				CED4FF562473FBA9006BA130 /* DashboardLineHeader.xib in Resources */,
+				CED4FF312473FBA9006BA130 /* BillsPaymentPreviewDetails.xib in Resources */,
+				CED4FFC824740603006BA130 /* Montserrat-Black.ttf in Resources */,
+				CED4FF3B2473FBA9006BA130 /* CreditCardView.xib in Resources */,
+				CED4FF332473FBA9006BA130 /* BeneficaryHeaderTitle.xib in Resources */,
+				CED4FF8D2473FBA9006BA130 /* BulkTransferBeneficary.xib in Resources */,
+				8314D43A22E644CC001D044A /* Main.storyboard in Resources */,
+				CED4FF772473FBA9006BA130 /* TransferScheduleTableCellTableViewCell.xib in Resources */,
+				CED4FF6D2473FBA9006BA130 /* EmptyCreditCardAdder.xib in Resources */,
+				CED4FFC624740603006BA130 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				CED4FF732473FBA9006BA130 /* SettingsBeneficaryDetailsTableCellHeader.xib in Resources */,
+				CED4FF602473FBA9006BA130 /* DashboardUpcomingPaymentTableCell.xib in Resources */,
+				CED4FF542473FBA9006BA130 /* DashboardAccountListSceneTableCell.xib in Resources */,
+				CED4FF532473FBA9006BA130 /* DashboardAdvertTableViewCell.xib in Resources */,
+				CED4FF802473FBA9006BA130 /* AmountDisplayView.xib in Resources */,
+				CED4FF8C2473FBA9006BA130 /* PopupTableItemsListDisplaySelector.xib in Resources */,
+				CED4FF702473FBA9006BA130 /* TextCardTableCell.xib in Resources */,
+				CED4FF7F2473FBA9006BA130 /* FileUploadTableCell.xib in Resources */,
+				CED4FF752473FBA9006BA130 /* FixedDepositSummaryTableCell.xib in Resources */,
+				CED4FF3A2473FBA9006BA130 /* DualFieldGroupHolder.xib in Resources */,
+				CED4FF882473FBA9006BA130 /* ExpenseManagerToolPersonIcon.xib in Resources */,
+				CED4FF682473FBA9006BA130 /* DashboardShareView.xib in Resources */,
+				CED4FF852473FBA9006BA130 /* LoginTypeSwitcherView.xib in Resources */,
+				CED4FF8B2473FBA9006BA130 /* MyOwn.xib in Resources */,
+				CED4FFBC24740603006BA130 /* Montserrat-Light.ttf in Resources */,
+				CED4FF712473FBA9006BA130 /* DisputeResolutionItemTableCell.xib in Resources */,
+				CED4FF2D2473FBA9006BA130 /* InteractableCreditCardView.xib in Resources */,
+				CED4FF402473FBA9006BA130 /* MovieItemMiniCardCollectionCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D48E628917999722CE92F9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomLoginDemo/Pods-CustomLoginDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomLoginDemo/Pods-CustomLoginDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomLoginDemo/Pods-CustomLoginDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96261C93D747DB12A9B86BBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomLoginDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8314D42B22E644CC001D044A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED4FE3E2473AA8D006BA130 /* IconButton.swift in Sources */,
+				8314D43722E644CC001D044A /* ViewController.swift in Sources */,
+				CED4FE3D2473AA8D006BA130 /* RadioButtonGroup.swift in Sources */,
+				CED4FF9E247405A2006BA130 /* UIToolBarExtension.swift in Sources */,
+				CED4FE642473B21E006BA130 /* SubTitleTableCellWithRadioButton.swift in Sources */,
+				CED4FE3F2473AA8D006BA130 /* RadioButton.swift in Sources */,
+				8314D43322E644CC001D044A /* AppDelegate.swift in Sources */,
+				CED4FF962473FE41006BA130 /* InputFieldGroup.swift in Sources */,
+				CED4FE502473AB82006BA130 /* UILabelExtension.swift in Sources */,
+				CED4FE9B2473CF26006BA130 /* NetErrorResponse.swift in Sources */,
+				8397D20E22E64A7500CB78DD /* Utilities.swift in Sources */,
+				8314D44722E64515001D044A /* SignUpViewController.swift in Sources */,
+				CED4FFD42474212E006BA130 /* PostCollectionViewCell.swift in Sources */,
+				CED4FE732473B88A006BA130 /* ActivityIndicatorExtension.swift in Sources */,
+				CED4FE762473B99E006BA130 /* DynamicSimpleInputGroupViewModel.swift in Sources */,
+				CED4FE482473AB05006BA130 /* PinEntryPoint.swift in Sources */,
+				CED4FE312473A9E6006BA130 /* DynamicFormSectionRow.swift in Sources */,
+				CED4FE942473CDC7006BA130 /* BaseViewController.swift in Sources */,
+				CED4FE682473B2AC006BA130 /* UITableViewCellExtension.swift in Sources */,
+				8314D44922E64520001D044A /* LoginViewController.swift in Sources */,
+				8314D43522E644CC001D044A /* SceneDelegate.swift in Sources */,
+				CED4FE832473BD98006BA130 /* DynamicFormTableViewCell.swift in Sources */,
+				CED4FE962473CE26006BA130 /* ViewControllerExtension.swift in Sources */,
+				CED4FE8B2473C580006BA130 /* SigUpViewModel.swift in Sources */,
+				CED4FE522473AC05006BA130 /* StringResource.swift in Sources */,
+				CED4FF9A2473FF2E006BA130 /* InputFieldGroup+ThousandSeparator.swift in Sources */,
+				CED4FE712473B78D006BA130 /* UIViewExtension.swift in Sources */,
+				CED4FF942473FD9E006BA130 /* ContextMenuProvider.swift in Sources */,
+				CED4FE4B2473AB05006BA130 /* LabelWithKeyboardGesture.swift in Sources */,
+				CED4FEB02473E919006BA130 /* GlobalControllerStoryID.swift in Sources */,
+				CED4FE2F2473A9E6006BA130 /* DynamicFormViewDatasource.swift in Sources */,
+				CED4FE302473A9E6006BA130 /* DynamicFormSectionData.swift in Sources */,
+				CED4FE7D2473BB36006BA130 /* RecurringFieldsPopulator.swift in Sources */,
+				CED4FE4C2473AB05006BA130 /* RoundedLabel.swift in Sources */,
+				CED4FFD224741651006BA130 /* Post.swift in Sources */,
+				CED4FE562473AD67006BA130 /* UIColor.swift in Sources */,
+				CED4FE7F2473BC47006BA130 /* DynamicFormSegmentViewModel.swift in Sources */,
+				CED4FE282473A984006BA130 /* BaseViewModelPopulator.swift in Sources */,
+				CED4FE7B2473BA5D006BA130 /* DatePickerInputGroup.swift in Sources */,
+				CED4FE9D2473CFAF006BA130 /* StatusMessagesPresenter.swift in Sources */,
+				CED4FFD024741514006BA130 /* Network.swift in Sources */,
+				CED4FE982473CEBF006BA130 /* ToastPresenter.swift in Sources */,
+				CED4FE2E2473A9E6006BA130 /* DynamicFormTableViewModel.swift in Sources */,
+				CED4FE8E2473C79B006BA130 /* ValidateSignUpProfileRequest.swift in Sources */,
+				CED4FEA82473D31E006BA130 /* RoundedIconButton.swift in Sources */,
+				CED4FE922473CB77006BA130 /* DynamicFormTable.swift in Sources */,
+				CED4FE402473AA8D006BA130 /* ButtomActionButton.swift in Sources */,
+				CED4FE542473ACC1006BA130 /* Theme.swift in Sources */,
+				CED4FE902473C7E4006BA130 /* Networking.swift in Sources */,
+				CED4FEA62473D270006BA130 /* BottomSheetViewController.swift in Sources */,
+				CED4FE6D2473B4B7006BA130 /* FormValidators.swift in Sources */,
+				CED4FF9C247400C7006BA130 /* InputFieldGroupFormController.swift in Sources */,
+				CED4001A24756853006BA130 /* SiginViewModel.swift in Sources */,
+				CED4FE662473B25F006BA130 /* TableCellWithRadioButton.swift in Sources */,
+				CED4FE4D2473AB05006BA130 /* IconTextLabel.swift in Sources */,
+				CED4FEAE2473E339006BA130 /* LoadingViewController.swift in Sources */,
+				8314D44B22E6452C001D044A /* HomeViewController.swift in Sources */,
+				CED4FE622473B1D5006BA130 /* RadioListTable.swift in Sources */,
+				CED4FEAA2473DCF9006BA130 /* UIResponder.swift in Sources */,
+				CED4FEA02473D102006BA130 /* BottomSheetConfig.swift in Sources */,
+				CED4FE872473BF06006BA130 /* UIButtonExtension.swift in Sources */,
+				CED4FE582473ADCD006BA130 /* Typography.swift in Sources */,
+				CED4FE782473B9FE006BA130 /* DynamicFormDateTimeViewModel.swift in Sources */,
+				CED4FF982473FED8006BA130 /* BaseXNib.swift in Sources */,
+				CED4FE6F2473B53E006BA130 /* StringExtension.swift in Sources */,
+				CED4FE492473AB05006BA130 /* BrandLabel.swift in Sources */,
+				830C3D8F22E7523E001FA4E7 /* Constants.swift in Sources */,
+				CED4FEA32473D18C006BA130 /* SimpleMessageWithHeader.swift in Sources */,
+				CED4FE4A2473AB05006BA130 /* CaptionLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8314D43822E644CC001D044A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8314D43922E644CC001D044A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8314D43D22E644CD001D044A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8314D43E22E644CD001D044A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8314D44122E644CD001D044A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8314D44222E644CD001D044A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8314D44422E644CD001D044A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACB20647BFB76A962B3E918B /* Pods-CustomLoginDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K5BT8EBBM;
+				INFOPLIST_FILE = CustomLoginDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oluwatobi.CustomLoginDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8314D44522E644CD001D044A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 266E92BF52F2752B81465D0D /* Pods-CustomLoginDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K5BT8EBBM;
+				INFOPLIST_FILE = CustomLoginDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oluwatobi.CustomLoginDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8314D42A22E644CC001D044A /* Build configuration list for PBXProject "CustomLoginDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8314D44122E644CD001D044A /* Debug */,
+				8314D44222E644CD001D044A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8314D44322E644CD001D044A /* Build configuration list for PBXNativeTarget "CustomLoginDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8314D44422E644CD001D044A /* Debug */,
+				8314D44522E644CD001D044A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8314D42722E644CC001D044A /* Project object */;
+}
